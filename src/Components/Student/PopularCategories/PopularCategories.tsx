@@ -22,7 +22,7 @@ function PopularCategories() {
           </p>
         ) : categories.category.length === 0 ? (
           <p className="text-gray-500 text-lg font-medium">
-            No courses found in wishlist.
+            No Categories found.
           </p>
         ) : null}
         <div className="categories-list">
