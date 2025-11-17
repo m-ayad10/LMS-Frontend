@@ -33,8 +33,8 @@ const CartSlice=createSlice({
         })
 
         //add to cart
-        .addCase(addToCart.pending,(state)=>{
-        })
+        // .addCase(addToCart.pending,(state)=>{
+        // })
         .addCase(addToCart.rejected,(state,action)=>{
             toast.error(action.payload||"Something went wrong");
             state.error=action.payload||null;
@@ -46,10 +46,10 @@ const CartSlice=createSlice({
         })
 
          //remove from cart
-        .addCase(removeFromCart.pending,(state)=>{
+        // .addCase(removeFromCart.pending,(state)=>{
 
-        })
-        .addCase(removeFromCart.rejected,(state,action)=>{
+        // })
+        .addCase(removeFromCart.rejected,(_,action)=>{
             toast.error(action.payload||"Something went wrong");
         })
         .addCase(removeFromCart.fulfilled,(state,action)=>{
