@@ -1,0 +1,144 @@
+.dashboard-section
+{
+    padding: 1rem 1rem;
+    margin-top: 4px;
+}
+.dashboard-header
+{
+    padding: 5px 1rem;
+}
+.dashboard-title
+{
+    display: flex;
+    gap: 6px;
+    font-size: 23px;
+    font-weight: 500;
+    align-items: center;
+}
+.dashboard-title-icon
+{
+    font-size: 1.5rem;
+}
+.dashboard-stats
+{
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: wrap;
+    margin-top: 10px;
+}
+.dashboard-stat-item
+{
+    display: flex;
+    flex-direction: column;
+  border: 1px solid black;
+  border-radius: 10px;
+  box-shadow:
+  0px 4px 6px -1px rgba(0, 0, 0, 0.1);
+    width: 24%;
+    align-items: center;
+    padding: 1rem 1rem;
+}
+.dashboard-stat-icon
+{
+    font-size: 1.6rem;
+    color: #777777;
+}
+.dashboard-stat-value
+{
+    font-size: 19px;
+    font-weight: 500;
+}
+.dashboard-stat-label
+{
+    font-size: 15px;
+    color: #777777;
+}
+.dashborad-charts-section
+{
+    width: 100%;
+    margin-top: 12px;
+}
+.dashboard-chart-title
+{
+    font-size: 20px;
+    font-weight: 500;
+}
+.dashboard-revenue-chart
+{
+    width: 100% !important;
+    height: 20rem !important;
+    padding: 0 !important;
+    margin: 0 !important;
+}
+.dashboard-pie-chart{
+    width: 40% !important;
+    height: 18rem !important;
+}
+.dashboard-header {
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}
+
+.dashboard-title {
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    transition: all 0.3s ease;
+}
+
+.dashboard-title-icon {
+    transition: all 0.3s ease;
+}
+
+
+.dashboard-stats {
+    transition: all 0.3s ease;
+}
+
+.dashboard-stat-item {
+    background: linear-gradient(135deg, #ffffff 0%, #f8fafc 100%);
+    border: 1px solid #e5e7eb;
+    transition: all 0.4s cubic-bezier(0.25, 0.46, 0.45, 0.94);
+    position: relative;
+    overflow: hidden;
+}
+
+.dashboard-stat-item::before {
+    content: '';
+    position: absolute;
+    top: 0;
+    left: -100%;
+    width: 100%;
+    height: 100%;
+    background: linear-gradient(90deg, transparent, rgba(255, 255, 255, 0.4), transparent);
+    transition: left 0.6s ease;
+}
+
+.dashboard-stat-icon {
+    transition: all 0.4s ease;
+}
+
+.dashboard-stat-value {
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    transition: all 0.3s ease;
+    background: linear-gradient(135deg, #1f2937 0%, #754FFE 100%);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    background-clip: text;
+}
+
+
+.dashboard-stat-label {
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    transition: all 0.3s ease;
+}
+
+
+
+/* Pulse animation for numbers */
+@keyframes numberPulse {
+    0% { transform: scale(1); }
+    50% { transform: scale(1.05); }
+    100% { transform: scale(1); }
+}
+
+.dashboard-stat-item:hover .dashboard-stat-value {
+    animation: numberPulse 0.6s ease;
+}

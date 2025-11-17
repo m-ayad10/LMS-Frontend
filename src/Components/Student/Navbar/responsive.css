@@ -1,0 +1,15 @@
+
+
+@media screen and (min-width:600px) and (max-width:1200px) {
+     .nav-logo {
+    width: 8.5rem;
+    height: 2.3rem;
+  }
+}
+
+@media (min-width: 1200px) {
+  .nav-logo {
+    width: 10rem;
+    height: 2.6rem;
+  }
+}

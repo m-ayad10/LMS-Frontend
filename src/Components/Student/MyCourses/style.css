@@ -1,0 +1,43 @@
+.course-progress-toggle
+{
+    background-color: #E6EAEF;
+    color: #777777;
+    padding: 4px 6px;
+    display: flex;
+    gap: 4px;
+    width: fit-content;
+    border-radius: 5px;
+}
+.course-progress-btn
+{
+    color: #777777;
+    font-size: 14px;
+    padding: 3px 5px;
+    border-radius: 5px;
+}
+.progress-btn-active
+{
+    background-color: #fff;
+    color: #000;
+}
+.course-progress-percentage
+{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+.progress-label
+{
+    font-size: 14px;
+}
+.progress-slider
+{
+    width: 100%;
+    margin: 0 0.7rem;
+    height: 6px;
+}
+.progress-value
+{
+    font-size: 13px;
+    color: #777777;
+}

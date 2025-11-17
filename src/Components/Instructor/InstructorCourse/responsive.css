@@ -1,0 +1,133 @@
+@media (max-width:400px) {
+  .course-manage-section {
+    padding: 0.8rem 0.2rem;
+  }
+  .courses-manage-header {
+    padding: 0.7rem 0.2rem;
+  }
+  .courses-manage-header-icon {
+    font-size: 1rem;
+  }
+  .courses-manage-title {
+    font-size: 19px;
+  }
+  .courses-manage-add-btn {
+    font-size: 14px;
+    padding: 3.5px 6px;
+    border-radius: 10px;
+  }
+  .courses-manage-search-input {
+    padding: 4px 4px;
+    font-size: 13.7px;
+    border-radius: 5px;
+    width: 9rem;
+  }
+ 
+  .courses-manage-sort-label,
+  .courses-manage-sort-dropdown {
+    font-size: 13px;
+    padding: 1px 1px;
+  }
+}
+@media (min-width: 400px) and (max-width:550px) {
+  .course-manage-section {
+    padding: 1rem 0.6rem;
+  }
+  .courses-manage-header {
+    padding: 0.7rem 0.5rem;
+  }
+  .courses-manage-header-icon {
+    font-size: 1rem;
+  }
+  .courses-manage-title {
+    font-size: 19px;
+  }
+  .courses-manage-add-btn {
+    font-size: 15px;
+    padding: 3.5px 6px;
+    border-radius: 10px;
+  }
+  .courses-manage-search-input {
+    padding: 4px 6px;
+    font-size: 15px;
+    border-radius: 5px;
+    width: 11rem;
+  }
+  .courses-manage-sort-label,
+  .courses-manage-sort-dropdown {
+    font-size: 15px;
+    padding: 1px 4px;
+  }
+}
+@media (min-width: 550px) and (max-width:700px) {
+  .course-manage-section {
+    padding: 1rem 1.1rem;
+  }
+  .courses-manage-header {
+    padding: 0.7rem 0.5rem;
+  }
+  .courses-manage-header-icon {
+    font-size: 1.1rem;
+  }
+  .courses-manage-title {
+    font-size: 21px;
+  }
+  .courses-manage-add-btn {
+    font-size: 16px;
+    padding: 5px 8px;
+    border-radius: 10px;
+  }
+  .courses-manage-search-input {
+    padding: 5px 6px;
+    font-size: 15px;
+    border-radius: 5px;
+    width: 12rem;
+  }
+}
+@media (min-width: 700px) and (max-width:900px) {
+  .course-manage-section {
+    padding: 1rem 1.3rem;
+  }
+  .courses-manage-add-btn {
+    font-size: 16px;
+    padding: 5px 10px;
+    border-radius: 12px;
+  }
+  .courses-manage-search-input {
+    padding: 5px 6px;
+    font-size: 15px;
+    border-radius: 5px;
+    width: 14rem;
+  }
+}
+@media (min-width: 900px) {
+  .course-manage-section {
+    padding: 1rem 1.5rem;
+  }
+  .courses-manage-header {
+    padding: 1rem 1rem;
+  }
+  .courses-manage-header-icon {
+    font-size: 1.2rem;
+  }
+  .courses-manage-title {
+    font-size: 23px;
+  }
+  .courses-manage-add-btn {
+    font-size: 16px;
+    padding: 6px 10px;
+    border-radius: 12px;
+  }
+  .courses-manage-search-input {
+    padding: 5px 6px;
+    font-size: 15px;
+    border-radius: 5px;
+    width: 15rem;
+  }
+  .courses-manage-sort-label,
+  .courses-manage-sort-dropdown {
+    font-size: 15px;
+    padding: 1px 4px;
+  }
+}
+

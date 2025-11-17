@@ -1,0 +1,67 @@
+
+.filter-modal-header {
+  display: flex;
+  justify-content: end;
+}
+.filter-modal-close-icon {
+  font-size: 1rem;
+  cursor: pointer;
+}
+.filter-modal-body {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 4%;
+}
+.filter-category-group {
+  width: 100%;
+}
+.filter-group-title {
+  font-size: 15px;
+  font-weight: 500;
+}
+.filter-category-group-items {
+  width: 100%;
+  display: flex;
+  flex-wrap: wrap;
+  gap: 4px 4%;
+}
+.filter-category-group-option {
+  display: flex;
+  align-items: center;
+  gap: 6px;
+  width: 48%;
+}
+.filter-checkbox {
+  height: 1rem;
+  cursor: pointer;
+}
+.filter-group-radio {
+  height: 1rem;
+  cursor: pointer;
+}
+.filter-group-label {
+  font-size: 14px;
+  color: #777777;
+}
+.filter-group {
+  width: 48%;
+}
+.filter-group-option {
+  display: flex;
+  align-items: center;
+  gap: 5px;
+}
+.filter-modal-action {
+  display: flex;
+  justify-content: end;
+}
+.filter-apply-btn {
+  font-size: 14px;
+  color: #fff;
+  background-color: #754ffe;
+  padding: 3px 7px;
+  border-radius: 4px;
+}
+.filter-modal-body {
+    max-height: 80vh;
+}

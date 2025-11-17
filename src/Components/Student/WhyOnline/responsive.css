@@ -1,0 +1,89 @@
+@media  (max-width:400px) {
+  .online-learning-section {
+    padding: 1rem 1rem;
+  }
+  .section-title {
+    font-size: 24px;
+  }
+  .benefits-list {
+    margin-top: 0.6rem;
+  }
+  .benefit-item {
+    width: 100%;
+    padding: 0.5rem;
+  }
+  .benefit-img {
+    height: 10rem;
+  }
+  .benefit-text {
+    font-size: 14px;
+  }
+}
+
+@media (min-width: 400px) and (max-width:550px) {
+  .online-learning-section {
+    padding: 1rem 2rem;
+  }
+  .section-title {
+    font-size: 24px;
+  }
+  .benefits-list {
+    margin-top: 0.6rem;
+  }
+  .benefit-item {
+    width: 100%;
+    padding: 0.5rem;
+  }
+  .benefit-img {
+    height: 12rem;
+  }
+  .benefit-text {
+    font-size: 15px;
+  }
+}
+
+@media (min-width: 550px) and (max-width:900px) {
+  .online-learning-section {
+    padding: 1rem 1.5rem;
+  }
+  .section-title {
+    font-size: 26px;
+  }
+  .benefits-list {
+    gap: 2%;
+    margin-top: 0.6rem;
+  }
+  .benefit-item {
+    width: 48%;
+    padding: 0.5rem;
+  }
+  .benefit-img {
+    height: 10rem;
+  }
+  .benefit-text {
+    font-size: 15px;
+  }
+}
+
+@media (min-width: 900px) {
+  .online-learning-section {
+    padding: 1rem 3rem;
+  }
+  .section-title {
+    font-size: 26px;
+  }
+  .benefits-list {
+    gap: 1%;
+    margin-top: 0.6rem;
+  }
+  .benefit-item {
+    width: 24%;
+    padding: 1rem;
+  }
+  .benefit-img {
+    height: 10rem;
+  }
+  .benefit-text {
+    font-size: 15px;
+  }
+}

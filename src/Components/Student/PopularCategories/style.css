@@ -1,0 +1,45 @@
+.categories-section
+{
+    padding: 1rem 1rem;
+}
+.categories-section-title
+{
+    text-align: center;
+    font-size: 25px;
+    font-weight: 500;
+}
+.categories-list
+{
+    display: flex;
+    flex-wrap: wrap;
+    gap: 4px 1%;
+    padding: 1rem 0.5rem;
+}
+.categories-item
+{
+    padding: 7px;
+    display: flex;
+    width: 19%;
+    gap: 2px;
+    border: 1px solid #E6EAEF;
+    border-radius: 5px;
+    cursor: pointer;
+}
+.categories-item:hover{
+    background-color: #E6EAEF;
+    transition:background-color 400ms ease-in-out ;
+}
+.categories-item-img
+{  
+    width: 3.5rem;
+}
+.categories-item-name
+{
+    font-weight: 500;
+    font-size: 17px;
+}
+.categories-item-count
+{
+    font-size: 15px;
+    color: #777777;
+}

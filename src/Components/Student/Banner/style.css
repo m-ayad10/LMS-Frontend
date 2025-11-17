@@ -1,0 +1,62 @@
+.hero-section
+{
+    padding: 1rem 2rem;
+    display: flex;
+    width: 100%;
+}
+.hero-content
+{
+    padding: 1rem;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 60%;
+}
+.hero-title
+{
+    font-size: 34px;
+    line-height: 2.5rem;
+    font-weight: 600;
+}
+.hero-description
+{
+    font-size: 15px;
+    color: #777777;
+    text-align: justify;
+}
+.hero-stats
+{
+    display: flex;
+    justify-content: space-around;
+}
+.stat-item
+{
+    text-align: center;
+}
+.stat-value
+{
+    font-size: 29px;
+    font-weight: 600;
+}
+.stat-label
+{
+    color: #777777;
+    font-size: 15px;
+}
+.hero-image
+{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 40%;
+}
+.banner-image
+{
+    height: auto;
+    width: 90%;
+}
+.bg-primary
+{
+    color: #754FFE;
+    text-shadow: 0.5px 0.5px 2px;
+}

@@ -1,0 +1,70 @@
+.profile-section{
+    padding: 1rem 1.5rem;
+}
+.profile-title
+{
+    font-size: 16px;
+    font-weight: 500;
+}
+.profile-divider
+{
+    width: 100%;
+    height: 0.5px;
+    color: #777777;
+    margin: 4px 0;
+}
+.profile-avatar-section
+{
+    display: flex;
+    gap: 8px;
+    align-items: center;
+}
+.profile-avatar
+{
+    width: 3rem;
+    height: 3rem;
+    border-radius: 50%;
+}
+.profile-form-wrapper
+{
+    padding: 2px 5px;
+}
+.profile-form
+{
+    width: 100%;
+}
+.profile-form-row
+{
+    margin: 4px 0;
+    display: flex;
+    flex-wrap: wrap;
+    gap: 2%;
+}
+.profile-form-group
+{
+    width: 49%;
+}
+.profile-form-actions
+{
+    display: flex;
+    margin: 4px 0;
+    gap: 5px;
+}
+.profile-btn-edit
+{
+    padding: 5px 10px;
+    border: 1px solid #754FFE;
+    font-size: 16px;
+    font-weight: 500;
+    color: #754FFE;
+    border-radius: 4px;
+}
+.profile-btn-save
+{
+    background-color: #754FFE;
+    font-size: 16px;
+    color: #fff;
+    padding: 5px 10px;
+    font-weight: 500;
+    border-radius: 4px;
+}

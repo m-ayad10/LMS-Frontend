@@ -1,0 +1,23 @@
+.page-banner-section
+{
+    background-color: rgba(113, 90, 198, 0.2);;
+    padding: 2rem 3rem;
+}
+
+.breadcrumb
+{
+    font-size: 20px;
+    font-weight: 500;
+    display: flex;
+    align-items: center;
+    gap: 3px;
+}
+.breadcrumb-icon
+{
+    font-size: 1.1rem;
+}
+.banner-title
+{
+    font-size: 25px;
+    font-weight: 500;
+}

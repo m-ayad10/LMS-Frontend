@@ -1,0 +1,39 @@
+@media (max-width: 480px) {
+  .filter-category-group-option {
+    display: flex;
+    width: 100%;
+  }
+  .filter-modal-body {
+    gap: 0%;
+  }
+  .filter-group-title {
+    font-size: 13px;
+  }
+  .filter-checkbox,
+  .filter-group-radio {
+    height: 0.6rem;
+  }
+  .filter-group-label {
+    font-size: 12px;
+  }
+  .filter-group {
+    width: 100%;
+  }
+  .filter-modal-body {
+    max-height: 80vh;
+  }
+}
+
+@media (min-width: 480px)and (max-width: 700px) {
+
+  .filter-group-title {
+  font-size: 14px;
+}
+.filter-checkbox,.filter-group-radio {
+  height: 0.9rem;
+}
+.filter-group-label {
+  font-size: 13px;
+}
+
+}

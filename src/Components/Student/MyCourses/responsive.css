@@ -1,0 +1,56 @@
+@media (max-width:500px) {
+  .course-progress-toggle {
+    padding: 3px 5px;
+  }
+  .course-progress-btn {
+    font-size: 13px;
+    padding: 2px 4px;
+  }
+  .progress-label {
+    font-size: 13px;
+  }
+  .progress-slider {
+    height: 6px;
+  }
+  .progress-value {
+    font-size: 12px;
+  }
+}
+
+@media (min-width: 500px) and (max-width:700px) {
+  .course-progress-toggle {
+    padding: 3px 5px;
+  }
+  .course-progress-btn {
+    font-size: 14px;
+    padding: 2px 4px;
+  }
+  .progress-label {
+    font-size: 14px;
+  }
+  .progress-slider {
+    height: 6px;
+  }
+  .progress-value {
+    font-size: 13px;
+  }
+}
+
+@media (min-width: 800px) {
+  .course-progress-toggle {
+    padding: 4px 6px;
+  }
+  .course-progress-btn {
+    font-size: 14px;
+    padding: 3px 5px;
+  }
+  .progress-label {
+    font-size: 14px;
+  }
+  .progress-slider {
+    height: 6px;
+  }
+  .progress-value {
+    font-size: 13px;
+  }
+}

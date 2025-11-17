@@ -1,0 +1,497 @@
+
+@media (max-width: 450px) {
+  .course-main-layout {
+    flex-direction: column;
+    padding: 0.5rem;
+    gap: 0.75rem;
+  }
+  
+  .course-video-player {
+    height: 220px;
+    max-height: 400px;
+  }
+  
+  .course-video-title {
+    font-size: 18px;
+  }
+  
+  .course-content-sidebar {
+    width: 100%;
+    max-height: none;
+    padding: 0.75rem;
+  }
+  
+  .course-content-header {
+    font-size: 16px;
+  }
+  
+  .lesson-title {
+    font-size: 13px;
+  }
+  
+  .lesson-number {
+    font-size: 13px;
+  }
+  
+  .reviews-header {
+    font-size: 18px;
+  }
+  
+  .review-form-title {
+    font-size: 16px;
+  }
+  
+  .review-textarea,
+  .submit-review-btn,
+  .reviewer-name,
+  .review-text {
+    font-size: 13px;
+  }
+  
+  .mobile-content-toggle {
+    display: flex;
+  }
+  
+  .mobile-content-hidden {
+    display: none;
+  }
+  
+  .course-reviews-section {
+    padding: 0.5rem;
+    margin-top: 1rem;
+  }
+  
+  .review-form {
+    padding: 1rem;
+  }
+  
+  .review-card {
+    padding: 1rem;
+  }
+  
+.star {
+  font-size: 1rem;
+}
+}
+
+/* 400px - 500px (Small Mobile) */
+@media (min-width: 400px) and (max-width: 500px) {
+    .course-main-layout {
+    padding: 0.75rem;
+     flex-direction: column;
+    gap: 0rem;
+  }
+  .course-video-player {
+    height: 240px;
+    max-height: 400px;
+  }
+  
+  .course-video-title {
+    font-size: 19px;
+  }
+   .course-content-sidebar {
+    width: 100%;
+  }
+  .course-content-header {
+    font-size: 17px;
+  }
+  
+  .reviews-header {
+    font-size: 19px;
+  }
+  
+  .review-form-title {
+    font-size: 17px;
+  }
+  .star {
+  font-size: 1.1rem;
+}
+}
+
+/* 500px - 600px (Medium Mobile) */
+@media (min-width: 500px) and (max-width: 600px) {
+  .course-main-layout {
+    padding: 0.75rem;
+     flex-direction: column;
+    gap: 0rem;
+  }
+  
+  .course-video-player {
+    height: 280px;
+    max-height: 400px;
+  }
+  
+  .course-video-title {
+    font-size: 20px;
+  }
+   .course-content-sidebar {
+    width: 100%;
+  }
+  
+  .course-content-header {
+    font-size: 18px;
+  }
+  
+  .reviews-header {
+    font-size: 20px;
+  }
+  
+  .review-form-title {
+    font-size: 18px;
+  }
+  
+  .lesson-title,
+  .review-textarea,
+  .submit-review-btn,
+  .reviewer-name,
+  .review-text {
+    font-size: 14px;
+  }
+  .star {
+  font-size: 1.2rem;
+}
+}
+
+/* 600px - 750px (Large Mobile/Small Tablet) */
+@media (min-width: 600px) and (max-width: 750px) {
+  .course-main-layout {
+    padding: 1rem;
+    flex-direction: column;
+    gap: 0rem;
+  }
+  
+  .course-video-player {
+    height: 320px;
+    max-height: 400px;
+  }
+  
+  .course-video-title {
+    font-size: 21px;
+  }
+  
+  .course-content-sidebar {
+    width: 100%;
+  }
+  
+  .course-content-header {
+    font-size: 19px;
+  }
+  
+  .reviews-header {
+    font-size: 21px;
+  }
+  
+  .review-form-title {
+    font-size: 19px;
+  }
+  
+  .mobile-content-toggle {
+    display: flex;
+  }
+  
+  .mobile-content-hidden {
+    display: none;
+  }
+  .star {
+  font-size: 1.2rem;
+}
+}
+
+/* 750px - 850px (Tablet) */
+@media (min-width: 750px) and (max-width: 850px) {
+  .course-main-layout {
+    padding: 1rem;
+    flex-direction: column;
+    gap: 1rem;
+  }
+  
+  .course-video-player {
+    height: 380px;
+    max-height: 400px;
+  }
+  
+  .course-video-title {
+    font-size: 22px;
+  }
+  
+  .course-content-sidebar {
+    width: 100%;
+    max-height: 400px;
+  }
+  
+  .course-content-header {
+    font-size: 20px;
+  }
+  
+  .reviews-header {
+    font-size: 22px;
+  }
+  
+  .review-form-title {
+    font-size: 20px;
+  }
+  
+  .mobile-content-toggle {
+    display: flex;
+  }
+  
+  .mobile-content-hidden {
+    display: none;
+  }
+  
+  .course-reviews-section {
+    padding: 1rem;
+  }
+  .star {
+  font-size: 1.3rem;
+}
+}
+
+/* 850px - 1000px (Large Tablet/Small Desktop) */
+@media (min-width: 850px) and (max-width: 1000px) {
+  .course-main-layout {
+    padding: 1rem;
+    flex-direction: row;
+    gap: 1.5rem;
+  }
+  
+  .course-video-player {
+    height: 420px;
+    max-height: 450px;
+  }
+  
+  .course-video-title {
+    font-size: 23px;
+  }
+  
+  .course-content-sidebar {
+    width: 280px;
+    padding: 12px 10px;
+  }
+  
+  .course-content-header {
+    font-size: 21px;
+  }
+  
+  .reviews-header {
+    font-size: 23px;
+  }
+  
+  .review-form-title {
+    font-size: 21px;
+  }
+  
+  .lesson-title,
+  .review-textarea,
+  .submit-review-btn,
+  .reviewer-name,
+  .review-text {
+    font-size: 15px;
+  }
+  
+  .mobile-content-toggle {
+    display: none;
+  }
+  
+  .mobile-content-hidden {
+    display: block;
+  }.star {
+  font-size: 1.35rem;
+}
+}
+
+/* 1000px - 1200px (Desktop) */
+@media (min-width: 1000px) and (max-width: 1200px) {
+  .course-main-layout {
+    padding: 1.25rem;
+  }
+  
+  .course-video-player {
+    height: 450px;
+    max-height: 500px;
+  }
+  
+  .course-video-title {
+    font-size: 24px;
+  }
+  
+  .course-content-sidebar {
+    width: 350px;
+    padding: 1.25rem;
+  }
+  
+  .course-content-header {
+    font-size: 22px;
+  }
+  
+  .reviews-header {
+    font-size: 24px;
+  }
+  
+  .review-form-title {
+    font-size: 22px;
+  }
+  
+  .lesson-title,
+  .review-textarea,
+  .submit-review-btn,
+  .reviewer-name,
+  .review-text {
+    font-size: 16px;
+  }
+  
+  .lesson-number {
+    font-size: 15px;
+  }
+  .star {
+  font-size: 1.4rem;
+}
+}
+
+/* 1200px and above (Large Desktop) */
+@media (min-width: 1200px) {
+  .course-main-layout {
+    padding: 1.5rem;
+  }
+  
+  .course-video-player {
+    height: 500px;
+    max-height: 550px;
+  }
+  
+  .course-video-title {
+    font-size: 26px;
+  }
+  
+  .course-content-sidebar {
+    width: 380px;
+    padding: 1.5rem;
+  }
+  
+  .course-content-header {
+    font-size: 24px;
+  }
+  
+  .reviews-header {
+    font-size: 26px;
+  }
+  
+  .review-form-title {
+    font-size: 24px;
+  }
+  
+  .lesson-title,
+  .review-textarea,
+  .submit-review-btn,
+  .reviewer-name,
+  .review-text {
+    font-size: 17px;
+  }
+  
+  .lesson-number {
+    font-size: 16px;
+  }
+}
+
+/* Additional utility for very large screens */
+@media (min-width: 1400px) {
+  .course-main-layout {
+    max-width: 1600px;
+  }
+  
+  .course-video-player {
+    height: 550px;
+    max-height: 600px;
+  }
+}
+@media (max-width: 450px) {
+  .review-header img {
+    width: 35px;
+    height: 35px;
+  }
+  
+  .review-header {
+    gap: 0.75rem;
+  }
+  
+  .review-header > div {
+    gap: 0.2rem;
+  }
+  
+  .star {
+    font-size: 1rem;
+  }
+}
+
+@media (min-width: 450px) and (max-width: 500px) {
+  .review-header img {
+    width: 36px;
+    height: 36px;
+  }
+  
+  .star {
+    font-size: 1.1rem;
+  }
+}
+
+@media (min-width: 500px) and (max-width: 600px) {
+  .review-header img {
+    width: 38px;
+    height: 38px;
+  }
+  
+  .star {
+    font-size: 1.2rem;
+  }
+}
+
+@media (min-width: 600px) and (max-width: 750px) {
+  .review-header img {
+    width: 40px;
+    height: 40px;
+  }
+  
+  .star {
+    font-size: 1.2rem;
+  }
+}
+
+@media (min-width: 750px) and (max-width: 850px) {
+  .review-header img {
+    width: 42px;
+    height: 42px;
+  }
+  
+  .star {
+    font-size: 1.3rem;
+  }
+}
+
+@media (min-width: 850px) and (max-width: 1000px) {
+  .review-header img {
+    width: 44px;
+    height: 44px;
+  }
+  
+  .star {
+    font-size: 1.35rem;
+  }
+}
+
+@media (min-width: 1000px) and (max-width: 1200px) {
+  .review-header img {
+    width: 46px;
+    height: 46px;
+  }
+  
+  .star {
+    font-size: 1.4rem;
+  }
+}
+
+@media (min-width: 1200px) {
+  .review-header img {
+    width: 48px;
+    height: 48px;
+  }
+}

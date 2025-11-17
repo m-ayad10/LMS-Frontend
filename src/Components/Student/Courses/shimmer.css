@@ -1,0 +1,175 @@
+/* Shimmer Loading Styles */
+.shimmer-card {
+  position: relative;
+  overflow: hidden;
+}
+
+.shimmer-card::before {
+  content: '';
+  position: absolute;
+  top: 0;
+  left: -100%;
+  height: 100%;
+  background: linear-gradient(90deg, transparent, rgba(255, 255, 255, 0.4), transparent);
+  animation: shimmer 1.5s infinite;
+  z-index: 1;
+}
+
+@keyframes shimmer {
+  0% {
+    left: -100%;
+  }
+  100% {
+    left: 100%;
+  }
+}
+
+.shimmer-thumbnail {
+  height: 12rem;
+  background: #e0e0e0;
+  border-radius: 4px;
+  position: relative;
+  overflow: hidden;
+}
+
+.shimmer-wishlist {
+  background: #e0e0e0 !important;
+  border: none !important;
+  box-shadow: none !important;
+}
+
+.shimmer-wishlist::after {
+  display: none;
+}
+
+.shimmer-price {
+  background: #e0e0e0 !important;
+  color: transparent !important;
+  border: none !important;
+  box-shadow: none !important;
+  min-width: 80px;
+  height: 20px;
+}
+
+.shimmer-title {
+  width: 100%;
+  height: 20px;
+  background: #e0e0e0;
+  border-radius: 3px;
+  margin: 5px 0;
+}
+
+.shimmer-meta {
+  width: 45%;
+  height: 16px;
+  background: #e0e0e0;
+  border-radius: 3px;
+}
+
+.shimmer-rating {
+  width: 60px;
+  height: 16px;
+  background: #e0e0e0;
+  border-radius: 3px;
+  margin: 5px 0;
+}
+
+.shimmer-instructor-img {
+  width: 2.8rem;
+  height: 2.8rem;
+  background: #e0e0e0;
+  border-radius: 50%;
+}
+
+.shimmer-instructor-name {
+  flex: 1;
+  height: 20px;
+  background: #e0e0e0;
+  border-radius: 3px;
+  margin-left: 5px;
+}
+
+
+
+
+
+/* Shimmer Responsive Styles */
+@media (max-width: 400px) {
+  .shimmer-thumbnail {
+    height: 11rem;
+  }
+  .shimmer-instructor-img {
+    width: 2.3rem;
+    height: 2.3rem;
+  }
+}
+
+@media (min-width: 400px) and (max-width: 450px) {
+  .shimmer-thumbnail {
+    height: 13rem;
+  }
+  .shimmer-instructor-img {
+    width: 2.5rem;
+    height: 2.5rem;
+  }
+}
+
+@media (min-width: 450px) and (max-width: 550px) {
+  .shimmer-thumbnail {
+    height: 16rem;
+  }
+  .shimmer-instructor-img {
+    width: 2.5rem;
+    height: 2.5rem;
+  }
+}
+
+@media (min-width: 550px) and (max-width: 600px) {
+  .shimmer-thumbnail {
+    height: 12rem;
+  }
+  .shimmer-instructor-img {
+    width: 2.5rem;
+    height: 2.5rem;
+  }
+}
+
+@media (min-width: 600px) and (max-width: 800px) {
+  .shimmer-thumbnail {
+    height: 12rem;
+  }
+  .shimmer-instructor-img {
+    width: 2.5rem;
+    height: 2.5rem;
+  }
+}
+
+@media (min-width: 800px) and (max-width: 950px) {
+  .shimmer-thumbnail {
+    height: 14rem;
+  }
+  .shimmer-instructor-img {
+    width: 2.8rem;
+    height: 2.8rem;
+  }
+}
+
+@media (min-width: 950px) and (max-width: 1150px) {
+  .shimmer-thumbnail {
+    height: 12rem;
+  }
+  .shimmer-instructor-img {
+    width: 2.8rem;
+    height: 2.8rem;
+  }
+}
+
+@media (min-width: 1150px) {
+  .shimmer-thumbnail {
+    height: 12rem;
+  }
+  .shimmer-instructor-img {
+    width: 2.8rem;
+    height: 2.8rem;
+  }
+}

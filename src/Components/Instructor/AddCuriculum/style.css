@@ -1,0 +1,328 @@
+/* Curriculum Section */
+.add-course-video-section {
+    margin: 1rem 0;
+    padding: 1rem;
+    border: 1px solid #e9ecef;
+    border-radius: 8px;
+    background-color: #f8f9fa;
+}
+
+.add-course-video-section:last-of-type {
+    margin-bottom: 0.5rem;
+}
+
+/* Lesson Buttons */
+.add-lesson-btn {
+    border: 1px solid #754FFE;
+    color: #754FFE;
+    background-color: transparent;
+    padding: 9px 10px;
+    border-radius: 6px;
+    font-size: 14px;
+    font-weight: 500;
+    cursor: pointer;
+    transition: all 0.2s ease;
+    display: flex;
+    align-items: center;
+    gap: 0.5rem;
+    margin: 1rem auto;
+}
+
+.add-lesson-btn:hover {
+    background-color: #754FFE;
+    color: #ffffff;
+    transform: translateY(-1px);
+}
+
+.add-lesson-delete-btn {
+    border: 1px solid #dc2626;
+    color: #dc2626;
+    background-color: transparent;
+    padding: 9px 10px;
+    border-radius: 6px;
+    font-size: 14px;
+    font-weight: 500;
+    cursor: pointer;
+    transition: all 0.2s ease;
+    display: block;
+    margin: 0.5rem 0 1rem 0;
+    width: 100%;
+}
+
+.add-lesson-delete-btn:hover {
+    background-color: #dc2626;
+    color: #ffffff;
+}
+
+/* Submit Button */
+.add-course-submit-btn {
+    background-color: #16a34a;
+    color: #ffffff;
+    box-shadow: 0 2px 6px rgba(22, 163, 74, 0.3);
+}
+
+.add-course-submit-btn:hover {
+    background-color: #15803d;
+    transform: translateY(-1px);
+    box-shadow: 0 4px 8px rgba(22, 163, 74, 0.4);
+}
+
+/* Media Upload for Lessons */
+.add-course-media-upload {
+    border: 2px dashed #d1d5db;
+    border-radius: 8px;
+    padding: 1.5rem;
+    text-align: center;
+    transition: all 0.2s ease;
+    cursor: pointer;
+    background-color: #ffffff;
+    margin: 0.5rem 0;
+}
+
+.add-course-media-upload:hover {
+    border-color: #754FFE;
+    background-color: #f8f7ff;
+}
+
+.add-course-thumbnail-preview,
+.add-course-preview-vedio {
+    max-width: 100%;
+    border-radius: 6px;
+    cursor: pointer;
+    transition: transform 0.2s ease;
+}
+
+.add-course-thumbnail-preview {
+    height: 12rem;
+    width: auto;
+    object-fit: cover;
+}
+
+.add-course-preview-vedio {
+    height: 12rem;
+    width: auto;
+    background-color: #000000;
+}
+
+.add-course-thumbnail-preview:hover,
+.add-course-preview-vedio:hover {
+    transform: scale(1.02);
+}
+
+.add-course-media-icon {
+    font-size: 3rem;
+    color: #777777;
+    transition: color 0.2s ease;
+}
+
+.add-course-media-upload:hover .add-course-media-icon {
+    color: #754FFE;
+}
+
+.add-course-media-label {
+    display: block;
+    margin-top: 0.5rem;
+    font-size: 14px;
+    color: #777777;
+}
+
+/* Responsive Design */
+@media (max-width: 400px) {
+    .add-course-video-section {
+        margin: 0.75rem 0;
+        padding: 0.75rem;
+    }
+    
+    .add-lesson-btn {
+        padding: 8px 9px;
+        font-size: 13px;
+    }
+    
+    .add-lesson-delete-btn {
+        padding: 8px 9px;
+        font-size: 13px;
+    }
+    
+    .add-course-media-upload {
+        padding: 1rem;
+    }
+    
+    .add-course-thumbnail-preview {
+        height: 8rem;
+    }
+    
+    .add-course-preview-vedio {
+        height: 8rem;
+    }
+    
+    .add-course-media-icon {
+        font-size: 2.5rem;
+    }
+    
+    .add-course-media-label {
+        font-size: 12px;
+    }
+}
+
+@media (min-width: 400px) and (max-width: 500px) {
+    .add-course-video-section {
+        margin: 0.75rem 0;
+        padding: 0.75rem;
+    }
+    
+    .add-lesson-btn {
+        padding: 8px 9px;
+        font-size: 13px;
+    }
+    
+    .add-lesson-delete-btn {
+        padding: 8px 9px;
+        font-size: 13px;
+    }
+    
+    .add-course-media-upload {
+        padding: 1.25rem;
+    }
+    
+    .add-course-thumbnail-preview {
+        height: 9rem;
+    }
+    
+    .add-course-preview-vedio {
+        height: 9rem;
+    }
+    
+    .add-course-media-icon {
+        font-size: 2.75rem;
+    }
+    
+    .add-course-media-label {
+        font-size: 13px;
+    }
+}
+
+@media (min-width: 500px) and (max-width: 700px) {
+    .add-course-video-section {
+        margin: 1rem 0;
+        padding: 1rem;
+    }
+    
+    .add-lesson-btn {
+        padding: 9px 10px;
+        font-size: 14px;
+    }
+    
+    .add-lesson-delete-btn {
+        padding: 9px 10px;
+        font-size: 14px;
+    }
+    
+    .add-course-media-upload {
+        padding: 1.5rem;
+    }
+    
+    .add-course-thumbnail-preview {
+        height: 10rem;
+    }
+    
+    .add-course-preview-vedio {
+        height: 10rem;
+    }
+    
+    .add-course-media-icon {
+        font-size: 3rem;
+    }
+    
+    .add-course-media-label {
+        font-size: 13px;
+    }
+}
+
+@media (min-width: 700px) and (max-width: 900px) {
+    .add-course-video-section {
+        margin: 1rem 0;
+        padding: 1rem;
+    }
+    
+    .add-lesson-btn {
+        padding: 9px 10px;
+        font-size: 14px;
+    }
+    
+    .add-lesson-delete-btn {
+        padding: 9px 10px;
+        font-size: 14px;
+    }
+    
+    .add-course-media-upload {
+        padding: 1.5rem;
+    }
+    
+    .add-course-thumbnail-preview {
+        height: 11rem;
+    }
+    
+    .add-course-preview-vedio {
+        height: 11rem;
+    }
+    
+    .add-course-media-icon {
+        font-size: 3.5rem;
+    }
+    
+    .add-course-media-label {
+        font-size: 14px;
+    }
+}
+
+@media (min-width: 900px) {
+    .add-course-video-section {
+        margin: 1rem 0;
+        padding: 1rem;
+    }
+    
+    .add-lesson-btn {
+        padding: 9px 10px;
+        font-size: 14px;
+    }
+    
+    .add-lesson-delete-btn {
+        padding: 9px 10px;
+        font-size: 14px;
+    }
+    
+    .add-course-media-upload {
+        padding: 1.5rem;
+    }
+    
+    .add-course-thumbnail-preview {
+        height: 12rem;
+    }
+    
+    .add-course-preview-vedio {
+        height: 12rem;
+    }
+    
+    .add-course-media-icon {
+        font-size: 4rem;
+    }
+    
+    .add-course-media-label {
+        font-size: 14px;
+    }
+}
+
+/* Large screens */
+@media (min-width: 1200px) {
+    .add-course-thumbnail-preview {
+        height: 14rem;
+    }
+    
+    .add-course-preview-vedio {
+        height: 14rem;
+    }
+    
+    .add-course-media-icon {
+        font-size: 4.5rem;
+    }
+}

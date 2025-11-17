@@ -1,0 +1,155 @@
+@media (max-width:400px) {
+  .instructor-section {
+    padding: 1rem 1rem;
+  }
+  .instructor-section-title {
+    font-size: 24px;
+  }
+  .instructor-lists {
+    gap: 0%;
+  }
+  .instructor-item {
+    padding: 6px 1rem;
+    width: 100%;
+    margin-top: 9px;
+  }
+  .instructor-item-img {
+    width: 100%;
+    padding: 0rem 1.5rem;
+    height: 14rem;
+  }
+  .instructor-name {
+    font-size: 16px;
+  }
+  .instructor-role {
+    font-size: 14px;
+  }
+}
+@media (min-width: 400px) and (max-width:500px) {
+  .instructor-section {
+    padding: 1rem 1rem;
+  }
+  .instructor-section-title {
+    font-size: 25px;
+  }
+  .instructor-lists {
+    gap: 0%;
+  }
+  .instructor-item {
+    padding: 6px 3rem;
+    width: 100%;
+    margin-top: 9px;
+  }
+  .instructor-item-img {
+    width: 100%;
+    padding: 0rem 3rem;
+    height: 15rem;
+  }
+  .instructor-name {
+    font-size: 17px;
+  }
+  .instructor-role {
+    font-size: 15px;
+  }
+}
+@media (min-width: 500px) and (max-width:700px) {
+  .instructor-section {
+    padding: 1rem 1rem;
+  }
+  .instructor-section-title {
+    font-size: 26px;
+  }
+  .instructor-lists {
+    gap: 4%;
+  }
+  .instructor-item {
+    padding: 6px 10px;
+    width: 48%;
+  }
+  .instructor-item-img {
+    width: 100%;
+    padding: 0rem 1rem;
+    height: 14rem;
+  }
+  .instructor-name {
+    font-size: 17px;
+  }
+  .instructor-role {
+    font-size: 15px;
+  }
+}
+@media (min-width: 700px) and (max-width:900px) {
+  .instructor-section {
+    padding: 1rem 1rem;
+  }
+  .instructor-section-title {
+    font-size: 26px;
+  }
+  .instructor-lists {
+    gap: 1%;
+  }
+  .instructor-item {
+    padding: 6px 0px;
+    width: 24%;
+  }
+  .instructor-item-img {
+    width: 100%;
+    padding: 0rem 0.1rem;
+    height: 14rem;
+  }
+  .instructor-name {
+    font-size: 17px;
+  }
+  .instructor-role {
+    font-size: 15px;
+  }
+}
+@media (min-width: 900px) and (max-width:1100px) {
+  .instructor-section {
+    padding: 1rem 1rem;
+  }
+  .instructor-section-title {
+    font-size: 26px;
+  }
+  .instructor-lists {
+    gap: 1%;
+  }
+  .instructor-item {
+    padding: 8px 8px;
+    width: 24%;
+  }
+  .instructor-item-img {
+    width: 100%;
+    padding: 0rem 0.7rem;
+    height: 14rem;
+  }
+  .instructor-name {
+    font-size: 17px;
+  }
+  .instructor-role {
+    font-size: 15px;
+  }
+}
+@media (min-width: 1100px) {
+  .instructor-section-title {
+    font-size: 26px;
+  }
+  .instructor-lists {
+    gap: 1%;
+  }
+  .instructor-item {
+    padding: 8px 10px;
+    width: 24%;
+  }
+  .instructor-item-img {
+    width: 100%;
+    padding: 0rem 1rem;
+    height: 14rem;
+  }
+  .instructor-name {
+    font-size: 17px;
+  }
+  .instructor-role {
+    font-size: 15px;
+  }
+}

@@ -1,0 +1,95 @@
+.user-management {
+  padding: 1rem;
+}
+
+.user-management__filter-buttons {
+  display: flex;
+  gap: 1rem;
+  margin-bottom: 1.5rem;
+}
+
+.user-management__filter-btn {
+  padding: 6px 8px;
+  font-size: 16px;
+  border: none;
+  border-radius: 5px;
+  color: white;
+  cursor: pointer;
+  transition: background-color 0.2s ease;
+    background-color: #777777;
+}
+
+.user-management__filter-btn:hover {
+  background-color: #6a46e5;
+}
+
+.user-management__filter-btn-active {
+  background-color: #6a46e5;
+}
+
+.user-management__list {
+  display: flex;
+  flex-direction: column;
+  gap: 6px;
+}
+
+.user-card {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 4px 7px;
+  background-color: #fff;
+  border: 1px solid #777777;
+  border-radius: 6px;
+}
+
+.user-card__info {
+  display: flex;
+  align-items: center;
+  gap: 1rem;
+}
+
+.user-card__image {
+  width: 2.8rem;
+  height: 2.8rem;
+  border-radius: 50%;
+  object-fit: cover;
+}
+
+.user-card__name {
+  color: #000;
+  font-weight: 500;
+  font-size: 16px;
+  margin: 0;
+}
+
+.user-card__actions {
+  display: flex;
+  gap: 0.5rem;
+}
+
+.user-card__btn {
+  padding: 6px 7px;
+  font-size: 15px;
+  border: none;
+  border-radius: 6px;
+  color: white;
+  cursor: pointer;
+  transition: background-color 0.2s ease;
+}
+
+.user-card__btn--activate {
+  background-color: #16a34a;
+}
+
+.user-card__btn--activate:hover {
+  background-color: #15803d;
+}
+
+.user-card__btn--block {
+  background-color: #dc2626;
+}
+
+.user-card__btn--block:hover {
+  background-color: #b91c1c;
+}

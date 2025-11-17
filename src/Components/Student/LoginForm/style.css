@@ -1,0 +1,158 @@
+.auth-section
+{
+    display: flex;
+}
+.auth-image-cont
+{
+    width: 50%;
+    padding: 2rem 3rem;
+    display: flex;
+    align-items: center;
+}
+.auth-image
+{
+    width: 100%;
+}
+.auth-form-cont
+{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    width: 50%;
+}
+.error-message
+{
+    color: #d8000c;
+    background-color: #ffe5e5;
+    border-radius: 5px;
+    width: 100%;
+    padding: 6px 20px;
+    font-size: 14px;
+    margin-top: 3px;
+}
+.auth-content
+{
+    padding: 1rem 1rem;
+    padding-right: 8rem;
+}
+.auth-title
+{
+    font-size: 28px;
+    font-weight: 600;
+}
+.auth-description
+{
+    color: #777777;
+    font-size: 15px;
+}
+.auth-input-label
+{
+    color: #777777;
+    font-size: 15px;
+}
+.auth-input-group
+{
+    position: relative;
+    margin: 8px 0;
+}.auth-input-icon {
+  position: absolute;
+  top: 9px;
+  left: 14px;
+  font-size: 1.2rem;
+  color: #888;
+  transition: color 0.3s ease, transform 0.2s ease;
+}
+
+.auth-input-field {
+  outline: none;
+  border: 1px solid #754FFE;
+  width: 100%;
+  padding: 8px;
+  border-radius: 4px;
+  padding-left: 3rem;
+  transition: border 0.25s ease, box-shadow 0.25s ease;
+  background-color: #fff;
+}
+
+/* Focus & interaction effects */
+.auth-input-field:focus {
+  border-color: #5a3dfc;
+  box-shadow: 0 0 6px rgba(117, 79, 254, 0.4);
+}
+
+/* Icon reacts when input is focused */
+.auth-input-field:focus + .auth-input-icon {
+  color: #5a3dfc;
+  transform: scale(1.1);
+}
+
+/* Optional: if using React to track value and want icon active when filled */
+.input-filled .auth-input-icon {
+  color: #5a3dfc;
+}
+.auth-input-textfield {
+  outline: none;
+  border: 1px solid #777777;
+  width: 100%;
+  padding: 10px 12px;
+  border-radius: 6px;
+  color: #444;
+  background-color: #E6EAEF;
+  transition: all 0.25s ease-in-out;
+  resize: none;
+  min-height: 120px;
+  font-size: 0.95rem;
+  font-family: inherit;
+}
+
+/* Placeholder */
+.auth-input-textfield::placeholder {
+  color: #9ca3af;
+  transition: color 0.2s ease;
+}
+
+/* Hover effect */
+.auth-input-textfield:hover {
+  border-color: #754FFE;
+  background-color: #f4f5ff;
+}
+
+/* Focused state with subtle glow */
+.auth-input-textfield:focus {
+  border: 2px solid #754FFE;
+  background-color: #ffffff;
+  box-shadow: 0 0 8px rgba(117, 79, 254, 0.2);
+  color: #000000;
+}
+
+/* Optional smooth placeholder fade when typing */
+.auth-input-textfield:focus::placeholder {
+  color: transparent;
+}
+
+.auth-button
+{
+    width: 100%;
+    background-color: #754FFE;
+    color: #fff;
+    padding: 0.6rem;
+    font-size: 17px;
+    border-radius: 6px;
+    transition: all 400ms ease-in-out;
+}
+.auth-button:hover{
+    background-color: #3c06ff;
+    box-shadow: 1px 1px 2px 0px #4514f8;
+}
+.auth-switch
+{
+    color: #777777;
+    font-size: 15px;
+    text-align: center;
+    margin-top: 1px;
+}
+.auth-link
+{
+    color: #754FFE;
+    cursor: pointer;
+}

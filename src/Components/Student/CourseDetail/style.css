@@ -1,0 +1,362 @@
+.course-detail-section
+{
+    width: 100%;
+    display: flex;
+    flex-wrap: wrap;
+}
+.course-detail-start
+{
+    width: 75%;
+    padding: 2rem 2rem;
+    background-color: rgba(113, 90, 198, 0.2);
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    gap: 3px;
+}
+.course-detail-breadcrumb
+{
+    display: flex;
+    align-items: center;
+    font-size: 16px;
+    font-weight: 500;
+}
+.course-breadcrumb-icon
+{
+    font-size: 1.2rem;
+}
+.course-detail-breadcrumb-separator
+{
+    font-size: 1rem;
+
+}
+.course-detail-title{
+    font-size: 23px;
+    font-weight: 500;
+}
+.course-detail-description
+{
+    font-size: 15px;
+    color: #777777;
+}
+.course-detail-meta
+{
+    display: flex;
+    gap: 5rem;
+    align-items: center;
+}
+.course-detail-instructor
+{
+    display: flex;
+    align-items: center;
+    gap: 8px;
+}
+.course-detail-instructor-avatar
+{
+    width: 3.5rem;
+    height: 3.5rem;
+    border-radius: 50%;
+}
+.course-deatil-instructer-name
+{
+    font-size: 16px;
+    font-weight: 500;
+}
+.course-deatil-students{
+    display: flex;
+    align-items: center;
+    gap: 4px;
+}
+.course-detail-students-icon
+{
+    font-size: 1.3rem;
+    color: #754FFE;
+}
+.course-detail-student-count
+{
+    font-size: 15px;
+    color: #777777;
+}
+.course-deatil-course-rating
+{
+    display: flex;
+    align-items: center;
+    font-size: 14px;
+    color: #777777;
+}
+.course-deatil-rating-count
+{
+    color: inherit;
+    font-size: inherit;
+}
+
+
+.course-deatil-end
+{
+    width: 25%;
+    padding: 8px 1.5rem;
+    display: flex;
+    flex-direction: column;
+    row-gap: 2px;
+}
+.course-preview-wrapper
+{
+    position: relative;
+    width: 100%;
+}
+.course-deatil-video
+{
+    width: 100%;
+    border-radius: 4px;
+    object-position: center;
+    object-fit: cover;
+    height: 11rem;
+}
+.course-detail-course-price
+{
+    font-size: 15px;
+    font-weight: 500;
+    display: flex;
+    align-items: center;
+    gap: 4px;
+}
+.course-deatil-price-icon
+{
+    font-size: 1rem;
+}
+.course-end-info-row
+{
+    display: flex;
+    justify-content: space-between;
+    padding: 0 5px;
+    align-items: center;
+    margin:2px 0px;
+}
+.course-end-info-label
+{
+    font-size: 14px;
+    color: #777777;
+    display: flex;
+    align-items: center;
+    gap: 6px;
+}
+.course-end-info-icon
+{
+    font-size: 0.9rem;
+    color: inherit;
+}
+.course-end-info-value
+{
+    font-size: 14px;
+}
+.course-end-addToCart-btn
+{
+    margin-top: 2px;
+    width: 100%;
+    border: 1px solid #754FFE;
+    padding: 5px 7px;
+    border-radius: 4px;
+    color: #754FFE;
+    font-weight: 500;
+    transition: all 400ms ease-in-out;
+}
+.course-end-addToCart-btn:hover
+{
+    background-color: #754FFE;
+    color: #fff;
+}
+/* Add simple font families */
+.course-detail-breadcrumb {
+  font-family: 'Segoe UI', sans-serif;
+  transition: color 0.3s ease;
+}
+
+.course-detail-breadcrumb:hover {
+  color: #754FFE;
+}
+
+.course-breadcrumb-icon {
+  transition: color 0.3s ease;
+}
+
+.course-detail-breadcrumb:hover .course-breadcrumb-icon {
+  color: #754FFE;
+}
+
+.course-detail-title {
+  font-family: 'Georgia', serif;
+  transition: color 0.3s ease;
+}
+
+.course-detail-title:hover {
+  color: #754FFE;
+}
+
+.course-detail-description {
+  font-family: 'Segoe UI', sans-serif;
+  transition: color 0.3s ease;
+}
+
+.course-detail-description:hover {
+  color: #555;
+}
+
+.course-detail-instructor {
+  transition: all 0.3s ease;
+}
+
+
+.course-detail-instructor-avatar {
+  transition: transform 0.3s ease;
+}
+
+.course-detail-instructor:hover .course-detail-instructor-avatar {
+  transform: scale(1.05);
+}
+
+.course-deatil-instructer-name {
+  font-family: 'Segoe UI', sans-serif;
+  transition: color 0.3s ease;
+}
+
+.course-detail-instructor:hover .course-deatil-instructer-name {
+  color: #754FFE;
+}
+
+.course-deatil-students {
+  transition: all 0.3s ease;
+}
+
+.course-detail-students-icon {
+  transition: color 0.3s ease;
+}
+
+.course-deatil-students:hover .course-detail-students-icon {
+  color: #4512fb;
+}
+
+.course-detail-student-count {
+  font-family: 'Segoe UI', sans-serif;
+  transition: color 0.3s ease;
+}
+
+.course-deatil-students:hover .course-detail-student-count {
+  color: #754FFE;
+}
+
+.course-deatil-course-rating {
+  transition: all 0.3s ease;
+}
+
+
+.course-deatil-rating-count {
+  font-family: 'Segoe UI', sans-serif;
+  transition: color 0.3s ease;
+}
+
+.course-deatil-course-rating:hover .course-deatil-rating-count {
+  color: #d97706;
+}
+
+.course-preview-wrapper {
+  transition: transform 0.3s ease;
+}
+
+.course-preview-wrapper:hover {
+  transform: translateY(-2px);
+}
+
+.course-deatil-video {
+  transition: filter 0.3s ease;
+}
+
+.course-preview-wrapper:hover .course-deatil-video {
+  filter: brightness(1.05);
+}
+
+.course-wishlist-buttn {
+  transition: all 0.3s ease;
+}
+
+.course-wishlist-buttn:hover {
+  background-color: rgba(255, 255, 255, 0.9);
+}
+
+.wishlist-selected-icon {
+  transition: transform 0.3s ease;
+}
+
+.course-wishlist-buttn:hover .wishlist-selected-icon {
+  transform: scale(1.1);
+}
+
+.wishlist-unselected-icon {
+  transition: all 0.3s ease;
+}
+
+.course-wishlist-buttn:hover .wishlist-unselected-icon {
+  color: #ef4444;
+  transform: scale(1.1);
+}
+
+.course-detail-course-price {
+  font-family: 'Courier New', monospace;
+  transition: color 0.3s ease;
+}
+
+.course-detail-course-price:hover {
+  color: #059669;
+}
+
+.course-deatil-price-icon {
+  transition: color 0.3s ease;
+}
+
+.course-detail-course-price:hover .course-deatil-price-icon {
+  color: #10b981;
+}
+
+.course-end-info-row {
+  transition: background-color 0.3s ease;
+}
+
+.course-end-info-row:hover {
+  background-color: rgba(117, 79, 254, 0.03);
+}
+
+.course-end-info-label {
+  font-family: 'Segoe UI', sans-serif;
+  transition: color 0.3s ease;
+}
+
+.course-end-info-row:hover .course-end-info-label {
+  color: #754FFE;
+}
+
+.course-end-info-icon {
+  transition: color 0.3s ease;
+}
+
+.course-end-info-row:hover .course-end-info-icon {
+  color: #4512fb;
+}
+
+.course-end-info-value {
+  font-family: 'Segoe UI', sans-serif;
+  transition: color 0.3s ease;
+}
+
+.course-end-info-row:hover .course-end-info-value {
+  color: #1f2937;
+}
+
+.course-end-addToCart-btn {
+  font-family: 'Segoe UI', sans-serif;
+  transition: all 0.3s ease;
+}
+
+.course-end-addToCart-btn:hover {
+  background-color: #754FFE;
+  color: white;
+  transform: translateY(-1px);
+}

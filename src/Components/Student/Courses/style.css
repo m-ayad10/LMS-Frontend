@@ -1,0 +1,358 @@
+.course-section
+{
+    padding: 1rem 2rem;
+}
+.course-section-heading
+{
+    text-align: center;
+    font-size: 26px;
+    font-weight: 500;
+}
+.course-lists
+{
+    display: flex;
+    flex-wrap: wrap;
+    width: 100%;
+    column-gap: 1%;
+    row-gap: 10px;
+}
+.course-card
+{
+    width: 24%;
+    padding: 0.9rem 0.9rem;
+    border-radius: 8px;
+    display: flex;
+    flex-direction: column;
+    row-gap: 1px;
+    justify-content: center;
+    align-self: center;
+    border: 1px solid #E6EAEF;
+    transition: scale 600ms ease-in-out  ;
+}
+.course-card:hover
+{
+    cursor: pointer;
+    transform: translate(0px ,-4px);
+    scale: 1.003;
+    box-shadow: 1px 1px 1px 0px #754FFE;
+}
+.course-card-hr
+{
+    width: 100%;
+    height: 0.1px;
+    background-color: #777777;
+    border: none;
+}
+.course-item-thumbnail-cont
+{
+    position: relative;
+    overflow: hidden;
+    border-radius: 4px;
+}
+.course-thumbnail-img
+{
+    object-fit: cover;
+    object-position: center;
+    width:  100%;
+    height: 12rem;
+    border-radius: 4px;
+    transition: scale 600ms ease-in-out;
+}
+.course-thumbnail-img:hover
+{
+    border-radius: 4px;
+    scale: 1.12;
+}
+.course-wishlist-buttn
+{
+    position: absolute;
+    background-color: #fff;
+    top: 3px;
+    right: 5px;
+    height: 2rem;
+    cursor: pointer;
+    width: 2rem;
+    border-radius: 50%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.wishlist-unselected-icon,.wishlist-selected-icon
+{
+    font-size: 1.3rem;
+}
+.wishlist-unselected-icon
+{
+    color: #0D0C23;
+}
+.wishlist-selected-icon
+{
+    color: #754FFE;
+}
+.course-price
+{
+    display: flex;
+    align-items: center;
+    padding: 1px 5px;
+    border-radius: 3px;
+    display: inline-flex;
+    font-size: 11px;
+    background-color: #754FFE;
+    transform: translate(-10px,-10px);
+    color: #fff;
+}
+.course-currency-icon
+{
+    font-size: 9px;
+    color: #fff;
+}
+.course-title
+{
+    font-size: 16px;
+    font-weight: 500;
+    color: #754FFE;
+}
+.course-meta
+{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+.course-lessons,.course-students
+{
+    color: #754FFE;
+    font-size: 14px;
+    display: flex;
+    align-items: center;
+    padding: 3px 5px;
+}
+.icon-lessons,.icons-students
+{
+    font-size: 12px;
+}
+.course-instructor-box
+{
+    display: flex;
+    align-items: center;
+    padding: 3px 5px;
+    gap: 5px;
+}
+.course-instructor-img
+{
+    width: 2.8rem;
+    height: 2.8rem;
+    border-radius: 50%;
+    object-position: center;
+}
+.course-intructor-name
+{
+    color: #754FFE;
+    font-size: 16px;
+    font-weight: 500;
+}
+
+
+.course-section {
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}
+
+
+
+.course-section-heading:hover {
+    text-shadow: 0 4px 12px rgba(117, 79, 254, 0.3);
+}
+
+.course-card {
+    background: linear-gradient(145deg, #ffffff 0%, #f8fafc 100%);
+    border: 1px solid #E6EAEF;
+    transition: all 0.4s cubic-bezier(0.25, 0.46, 0.45, 0.94);
+    position: relative;
+    overflow: hidden;
+}
+
+.course-card::before {
+    content: '';
+    position: absolute;
+    top: 0;
+    left: -100%;
+    width: 100%;
+    height: 100%;
+    background: linear-gradient(90deg, transparent, rgba(117, 79, 254, 0.05), transparent);
+    transition: left 0.6s ease;
+}
+
+.course-card:hover::before {
+    left: 100%;
+}
+
+.course-card:hover {
+    transform: translateY(-6px);
+    box-shadow: 0 12px 28px rgba(117, 79, 254, 0.15);
+    border-color: #754FFE;
+}
+
+.course-item-thumbnail-cont {
+    border-radius: 6px;
+    overflow: hidden;
+}
+
+.course-thumbnail-img {
+    transition: all 0.5s cubic-bezier(0.25, 0.46, 0.45, 0.94);
+    filter: brightness(0.95);
+}
+
+.course-card:hover .course-thumbnail-img {
+    filter: brightness(1);
+}
+
+.course-wishlist-buttn {
+    background: rgba(255, 255, 255, 0.95);
+    backdrop-filter: blur(8px);
+    transition: all 0.3s cubic-bezier(0.68, -0.55, 0.265, 1.55);
+    box-shadow: 0 2px 8px rgba(0, 0, 0, 0.15);
+}
+
+.course-wishlist-buttn:hover {
+    transform: scale(1.15) rotate(5deg);
+    background: rgba(255, 255, 255, 1);
+    box-shadow: 0 4px 16px rgba(0, 0, 0, 0.25);
+}
+
+.wishlist-unselected-icon {
+    color: #0D0C23;
+    transition: all 0.3s ease;
+}
+
+.wishlist-selected-icon {
+    color: #754FFE;
+    transition: all 0.3s ease;
+}
+
+.course-wishlist-buttn:hover .wishlist-unselected-icon {
+    color: #ef4444;
+    transform: scale(1.1);
+}
+
+.course-wishlist-buttn:hover .wishlist-selected-icon {
+    color: #ef4444;
+    transform: scale(1.1);
+    filter: drop-shadow(0 2px 4px rgba(239, 68, 68, 0.3));
+}
+
+.course-price {
+    background: linear-gradient(135deg, #754FFE 0%, #8b6dff 100%);
+    color: #fff;
+    transition: all 0.3s ease;
+    box-shadow: 0 2px 8px rgba(117, 79, 254, 0.3);
+}
+
+.course-card:hover .course-price {
+    transform: translate(-10px, -12px);
+    box-shadow: 0 4px 16px rgba(117, 79, 254, 0.4);
+}
+
+.course-currency-icon {
+    transition: transform 0.3s ease;
+}
+
+
+.course-title {
+    color: #754FFE;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    transition: all 0.3s ease;
+    background: linear-gradient(135deg, #754FFE 0%, #4512fb 100%);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    background-clip: text;
+}
+
+
+
+.course-meta {
+    transition: all 0.3s ease;
+}
+
+
+
+.course-lessons, .course-students {
+    color: #754FFE;
+    transition: all 0.3s ease;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}
+
+.course-card:hover .course-lessons,
+.course-card:hover .course-students {
+    color: #4512fb;
+    /* transform: translateX(2px); */
+}
+
+.icon-lessons, .icons-students {
+    transition: transform 0.3s ease;
+}
+
+
+
+.course-card-hr {
+    background: linear-gradient(90deg, transparent, #754FFE, transparent);
+    transition: all 0.4s ease;
+    height: 1px;
+}
+
+
+.course-instructor-box {
+    transition: all 0.3s ease;
+}
+
+
+
+.course-instructor-img {
+    border: 2px solid transparent;
+    transition: all 0.4s ease;
+    box-shadow: 0 2px 8px rgba(0, 0, 0, 0.1);
+}
+
+.course-card:hover .course-instructor-img {
+    box-shadow: 0 4px 16px rgba(117, 79, 254, 0.3);
+}
+
+.course-intructor-name {
+    color: #754FFE;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    transition: all 0.3s ease;
+    background: linear-gradient(135deg, #754FFE 0%, #4512fb 100%);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    background-clip: text;
+}
+
+/* Star rating animation */
+.flex.text-\[\#777777\].text-\[14px\].items-center {
+    transition: all 0.3s ease;
+}
+
+.course-card:hover .flex.text-\[\#777777\].text-\[14px\].items-center {
+    transform: translateY(-2px);
+    color: #754FFE;
+}
+
+/* Pulse animation for wishlist when added */
+@keyframes wishlistPulse {
+    0% { transform: scale(1); }
+    50% { transform: scale(1.1); }
+    100% { transform: scale(1); }
+}
+
+.wishlist-selected-icon {
+    animation: wishlistPulse 0.6s ease;
+}
+
+/* Focus states for accessibility */
+.course-card:focus {
+    outline: 2px solid #754FFE;
+    outline-offset: 2px;
+}
+
+.course-wishlist-buttn:focus {
+    outline: 2px solid #754FFE;
+    outline-offset: 2px;
+}

@@ -1,0 +1,150 @@
+.add-course-payment-type
+{
+    display: flex;
+    gap: 6px;
+    align-items: center;
+}
+
+/* Payment Type Section */
+.add-course-payment-type {
+    display: flex;
+    gap: 1rem;
+    align-items: center;
+    margin: 1rem 0;
+}
+
+.add-course-payment-type input[type="radio"] {
+    width: 16px;
+    height: 16px;
+    accent-color: #754FFE;
+    cursor: pointer;
+}
+
+.add-course-payment-option {
+    display: flex;
+    gap: 0.5rem;
+    align-items: center;
+    cursor: pointer;
+}
+
+.add-course-payment-option label {
+    margin: 0;
+    cursor: pointer;
+    font-weight: 500;
+}
+
+/* Price Input */
+.add-course-price-input {
+    margin: 0.75rem 0;
+}
+
+/* Navigation with both buttons */
+.add-course-navigation.justify-between {
+    display: flex;
+    justify-content: space-between;
+    margin-top: 1.5rem;
+    padding-top: 1rem;
+    border-top: 1px solid #e9ecef;
+}
+
+.add-course-nav-btn.prev {
+    background-color: #f8f9fa;
+    color: #777777;
+    border: 1px solid #d1d5db;
+}
+
+.add-course-nav-btn.prev:hover {
+    background-color: #e9ecef;
+    color: #000000;
+}
+
+.add-course-nav-btn.next {
+    background-color: #754FFE;
+    color: #ffffff;
+}
+
+.add-course-nav-btn.next:hover {
+    background-color: #6a46e5;
+}
+
+/* Max-width: 400px */
+@media (max-width: 400px) {
+    .add-course-payment-type {
+        gap: 0.75rem;
+        margin: 0.75rem 0;
+        flex-wrap: wrap;
+    }
+    
+    .add-course-payment-type input[type="radio"] {
+        width: 14px;
+        height: 14px;
+    }
+    
+    .add-course-payment-option {
+        gap: 0.4rem;
+    }
+    
+    .add-course-price-input {
+        margin: 0.5rem 0;
+    }
+    
+    .add-course-navigation.justify-between {
+        margin-top: 1.25rem;
+        padding-top: 0.75rem;
+        gap: 0.5rem;
+    }
+}
+
+/* 400px - 500px */
+@media (min-width: 400px) and (max-width: 500px) {
+    .add-course-payment-type {
+        gap: 0.75rem;
+        margin: 0.75rem 0;
+    }
+    
+    .add-course-payment-type input[type="radio"] {
+        width: 14px;
+        height: 14px;
+    }
+    
+    .add-course-payment-option {
+        gap: 0.4rem;
+    }
+    
+    .add-course-price-input {
+        margin: 0.5rem 0;
+    }
+    
+    .add-course-navigation.justify-between {
+        margin-top: 1.25rem;
+        padding-top: 0.75rem;
+        gap: 0.5rem;
+    }
+}
+
+/* 500px and above */
+@media (min-width: 500px) {
+    .add-course-payment-type {
+        gap: 1rem;
+        margin: 1rem 0;
+    }
+    
+    .add-course-payment-type input[type="radio"] {
+        width: 16px;
+        height: 16px;
+    }
+    
+    .add-course-payment-option {
+        gap: 0.5rem;
+    }
+    
+    .add-course-price-input {
+        margin: 0.75rem 0;
+    }
+    
+    .add-course-navigation.justify-between {
+        margin-top: 1.5rem;
+        padding-top: 1rem;
+        gap: 1rem;
+    }
+}

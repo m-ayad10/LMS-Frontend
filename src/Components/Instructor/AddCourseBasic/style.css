@@ -1,0 +1,126 @@
+/* Course Form Styles */
+.add-course-label {
+    font-size: 14px;
+    font-weight: 600;
+    color: #000000;
+    margin-bottom: 0.3rem;
+    display: block;
+}
+
+.add-course-input,
+.add-course-textarea,
+.add-course-select {
+    width: 100%;
+    padding: 9px 10px;
+    border: 1px solid #d1d5db;
+    border-radius: 6px;
+    font-size: 14px;
+    color: #000000;
+    background-color: #ffffff;
+    transition: border-color 0.2s ease, box-shadow 0.2s ease;
+    font-family: inherit;
+}
+
+.add-course-input:focus,
+.add-course-textarea:focus,
+.add-course-select:focus {
+    outline: none;
+    border-color: #754FFE;
+    box-shadow: 0 0 0 3px rgba(117, 79, 254, 0.1);
+}
+
+.add-course-input::placeholder,
+.add-course-textarea::placeholder {
+    color: #777777;
+}
+
+.add-course-textarea {
+    resize: vertical;
+    min-height: 100px;
+    line-height: 1.5;
+}
+
+.add-course-select {
+    cursor: pointer;
+    appearance: none;
+    background-image: url("data:image/svg+xml,%3csvg xmlns='http://www.w3.org/2000/svg' fill='none' viewBox='0 0 20 20'%3e%3cpath stroke='%236b7280' stroke-linecap='round' stroke-linejoin='round' stroke-width='1.5' d='m6 8 4 4 4-4'/%3e%3c/svg%3e");
+    background-position: right 0.5rem center;
+    background-repeat: no-repeat;
+    background-size: 1.5em 1.5em;
+    padding-right: 2.5rem;
+}
+
+.add-course-select:invalid {
+    color: #777777;
+}
+
+.add-course-select-group-cont {
+    display: flex;
+    gap: 1rem;
+    margin: 0.6rem 0;
+}
+
+.add-course-select-group {
+    flex: 1;
+    display: flex;
+    flex-direction: column;
+    gap: 0rem;
+}
+
+.add-course-navigation {
+    display: flex;
+    margin-top: 1.5rem;
+    padding-top: 1rem;
+    border-top: 1px solid #e9ecef;
+}
+
+.add-course-nav-btn {
+    display: flex;
+    align-items: center;
+    gap: 0.5rem;
+    padding: 9px 10px;
+    background-color: #754FFE;
+    color: #ffffff;
+    border: none;
+    border-radius: 6px;
+    font-size: 14px;
+    font-weight: 600;
+    cursor: pointer;
+    transition: background-color 0.2s ease;
+}
+
+.add-course-nav-btn:hover {
+    background-color: #6a46e5;
+}
+
+.add-course-nav-btn:disabled {
+    background-color: #777777;
+    cursor: not-allowed;
+}
+
+.add-course-nav-btn-icon {
+    font-size: 1rem;
+    transition: transform 0.2s ease;
+}
+
+.add-course-nav-btn:hover .add-course-nav-btn-icon {
+    transform: translateX(2px);
+}
+
+/* Form Group Spacing */
+.add-course-form-group {
+    margin-bottom: 1rem;
+}
+
+/* Error States */
+.add-course-input.error,
+.add-course-textarea.error,
+.add-course-select.error {
+    border-color: #dc2626;
+}
+
+.add-course-error {
+    font-size: 12px;
+    color: #dc2626;
+    margin-top: 0.25rem;
+}

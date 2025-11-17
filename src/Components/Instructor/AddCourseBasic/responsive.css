@@ -1,0 +1,244 @@
+/* Max-width: 400px */
+@media (max-width: 400px) {
+    .add-course-label {
+        font-size: 13px;
+        margin-bottom: 0.2rem;
+    }
+    
+    .add-course-input,
+    .add-course-textarea,
+    .add-course-select {
+        padding: 8px 9px;
+        font-size: 13px;
+    }
+    
+    .add-course-textarea {
+        min-height: 80px;
+    }
+    
+    .add-course-select-group-cont {
+        flex-direction: column;
+        gap: 0.75rem;
+        margin: 0.75rem 0;
+    }
+    
+    .add-course-select-group {
+        width: 100%;
+    }
+    
+    .add-course-select {
+        min-width: auto;
+        padding-right: 2rem;
+    }
+    
+    .add-course-navigation {
+        margin-top: 1.25rem;
+        padding-top: 0.75rem;
+    }
+    
+    .add-course-nav-btn {
+        padding: 8px 9px;
+        font-size: 13px;
+        gap: 0.4rem;
+    }
+    
+    .add-course-nav-btn-icon {
+        font-size: 0.8rem;
+    }
+}
+
+/* 400px - 500px */
+@media (min-width: 400px) and (max-width: 500px) {
+    .add-course-label {
+        font-size: 13px;
+        margin-bottom: 0.4rem;
+    }
+    
+    .add-course-input,
+    .add-course-textarea,
+    .add-course-select {
+        padding: 8px 9px;
+        font-size: 13px;
+    }
+    
+    .add-course-textarea {
+        min-height: 90px;
+    }
+    
+    .add-course-select-group-cont {
+        gap: 0.75rem;
+        margin: 0.75rem 0;
+    }
+    
+    .add-course-select {
+        min-width: auto;
+        padding-right: 2rem;
+    }
+    
+    .add-course-navigation {
+        margin-top: 1.25rem;
+        padding-top: 0.75rem;
+    }
+    
+    .add-course-nav-btn {
+        padding: 8px 9px;
+        font-size: 13px;
+        gap: 0.4rem;
+    }
+    
+    .add-course-nav-btn-icon {
+        font-size: 0.8rem;
+    }
+}
+
+/* 500px - 600px */
+@media (min-width: 500px) and (max-width: 600px) {
+    .add-course-label {
+        font-size: 14px;
+    }
+    
+    .add-course-input,
+    .add-course-textarea,
+    .add-course-select {
+        padding: 9px 10px;
+        font-size: 14px;
+    }
+    
+    .add-course-textarea {
+        min-height: 100px;
+    }
+    
+    .add-course-select-group-cont {
+        gap: 1rem;
+        margin: 1rem 0;
+    }
+    
+    .add-course-navigation {
+        margin-top: 1.5rem;
+        padding-top: 1rem;
+    }
+    
+    .add-course-nav-btn {
+        padding: 9px 10px;
+        font-size: 14px;
+        gap: 0.5rem;
+    }
+    
+    .add-course-nav-btn-icon {
+        font-size: 0.9rem;
+    }
+}
+
+/* 600px - 800px */
+@media (min-width: 600px) and (max-width: 800px) {
+    .add-course-label {
+        font-size: 14px;
+    }
+    
+    .add-course-input,
+    .add-course-textarea,
+    .add-course-select {
+        padding: 9px 10px;
+        font-size: 14px;
+    }
+    
+    .add-course-textarea {
+        min-height: 100px;
+    }
+    
+    .add-course-select-group-cont {
+        gap: 1rem;
+        margin: 1rem 0;
+    }
+    
+    .add-course-navigation {
+        margin-top: 1.5rem;
+        padding-top: 1rem;
+    }
+    
+    .add-course-nav-btn {
+        padding: 9px 10px;
+        font-size: 14px;
+        gap: 0.5rem;
+    }
+    
+    .add-course-nav-btn-icon {
+        font-size: 1rem;
+    }
+}
+
+/* 800px - 1000px */
+@media (min-width: 800px) and (max-width: 1000px) {
+    .add-course-label {
+        font-size: 14px;
+    }
+    
+    .add-course-input,
+    .add-course-textarea,
+    .add-course-select {
+        padding: 9px 10px;
+        font-size: 14px;
+    }
+    
+    .add-course-textarea {
+        min-height: 100px;
+    }
+    
+    .add-course-select-group-cont {
+        gap: 1rem;
+        margin: 1rem 0;
+    }
+    
+    .add-course-navigation {
+        margin-top: 1.5rem;
+        padding-top: 1rem;
+    }
+    
+    .add-course-nav-btn {
+        padding: 9px 10px;
+        font-size: 14px;
+        gap: 0.5rem;
+    }
+    
+    .add-course-nav-btn-icon {
+        font-size: 1rem;
+    }
+}
+
+/* 1000px and above */
+@media (min-width: 1000px) {
+    .add-course-label {
+        font-size: 15px;
+    }
+    
+    .add-course-input,
+    .add-course-textarea,
+    .add-course-select {
+        padding: 9px 10px;
+        font-size: 15px;
+    }
+    
+    .add-course-textarea {
+        min-height: 120px;
+    }
+    
+    .add-course-select-group-cont {
+        gap: 1.5rem;
+        margin: 1.25rem 0;
+    }
+    
+    .add-course-navigation {
+        margin-top: 2rem;
+        padding-top: 1.25rem;
+    }
+    
+    .add-course-nav-btn {
+        padding: 10px 12px;
+        font-size: 15px;
+        gap: 0.5rem;
+    }
+    
+    .add-course-nav-btn-icon {
+        font-size: 1.1rem;
+    }
+}

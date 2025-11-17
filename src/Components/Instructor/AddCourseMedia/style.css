@@ -1,0 +1,67 @@
+/* Media Upload Sections */
+.add-course-thumbnail-section,
+.add-course-video-section {
+    margin: 0.75rem 0;
+}
+
+.add-course-media-upload {
+    border: 2px dashed #d1d5db;
+    border-radius: 8px;
+    padding: 1.5rem;
+    text-align: center;
+    transition: all 0.2s ease;
+    cursor: pointer;
+    background-color: #f8f9fa;
+}
+
+.add-course-media-upload:hover {
+    border-color: #754FFE;
+    background-color: #f8f7ff;
+}
+
+.add-course-thumbnail-preview,
+.add-course-preview-vedio {
+    max-width: 100%;
+    border-radius: 6px;
+    cursor: pointer;
+    transition: transform 0.2s ease;
+}
+
+.add-course-thumbnail-preview {
+    height: 14rem;
+    width: auto;
+    object-fit: cover;
+}
+
+.add-course-preview-vedio {
+    height: 14rem;
+    width: auto;
+    background-color: #000000;
+}
+
+.add-course-thumbnail-preview:hover,
+.add-course-preview-vedio:hover {
+    transform: scale(1.02);
+}
+
+.add-course-media-icon {
+    font-size: 4rem;
+    color: #777777;
+    transition: color 0.2s ease;
+}
+
+.add-course-media-upload:hover .add-course-media-icon {
+    color: #754FFE;
+}
+
+.add-course-media-label {
+    display: block;
+    margin-top: 0.5rem;
+    font-size: 14px;
+    color: #777777;
+}
+
+/* File Input */
+.add-course-file-input {
+    display: none;
+}

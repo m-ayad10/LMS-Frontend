@@ -1,0 +1,180 @@
+.navbar-cont
+{
+    background-color:#ebebec ;
+    border-bottom: 1.5px solid #E6EAEF;
+    padding: 8px 17px;
+}
+.navbar
+{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+.nav-start{
+    display: flex;
+    align-items: center;
+    gap: 1rem;
+}
+.nav-logo{
+    width: 9rem;
+    height: 2.6rem;
+}
+.nav-text
+{
+    font-size: 17px;
+    font-weight: 400;
+}
+.navbar-bar
+{
+    font-size: 1.2rem;
+    cursor: pointer;
+}
+.nav-text:hover
+{
+    color: #754FFE;
+    transition-property: color;
+    transition-duration: 350ms;
+    transition-timing-function: ease-in-out;
+    cursor: pointer;
+}
+.nav-search{
+    display: flex;
+    align-items: center;
+    position: relative;
+    padding: 5px;
+}
+
+.nav-search-input
+{   
+    border: 1px solid #754FFE;
+    outline: none;
+    border-radius: 1rem;
+    width: 14rem;
+    font-size: 16px;
+    padding: 5px 15px;
+}
+.nav-search-input:focus
+{
+    border: 1.5px solid #754FFE;
+
+}
+.nav-search-icon
+{
+    z-index: 2;
+    position: absolute;
+    top: 12px;
+    right: 15px;
+    font-size: 20px;
+    font-weight: 300;
+}
+.nav-search-btn
+{
+    font-size: 1.4rem;
+    cursor: pointer;
+}
+
+.nav-end
+{
+    display: flex;
+    align-items: center;
+}
+.nav-cart
+{
+    position: relative;
+}
+.nav-cart-count
+{
+    position: absolute;
+    top: 0px;
+    width: 1rem;
+    height: 1rem;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    right: 0px;
+    padding: 4px 4px;
+    color: #fff;
+    border-radius: 50%;
+    font-size: 11px;
+    background-color: #754FFE;
+}
+.nav-cart-icon
+{
+    font-size: 1.8rem;
+}
+.nav-cart-icon:hover{
+    color: #754FFE;
+    cursor: pointer;
+    transition: color 400ms ease-in-out;
+}
+.nav-login-btn
+{
+    background-color: #6c44fc;
+    color: #fff;
+    border: 0;
+    text-align: center;
+    width: 4.3rem;
+    border-radius: 6px;
+    height: 2.2rem;
+    transition: background-color 400ms ease-in-out;
+}
+.nav-login-btn:hover
+{
+    cursor: pointer;
+    background-color: #5d33f3;
+}
+.user-dropdown
+{
+    display: flex;
+    align-items: center;
+    cursor: pointer;
+}
+.user-dropdown-img
+{
+    width: 2.5rem;
+    height: 2.5rem;
+    object-position: center;
+    border-radius: 50%;
+    border: 1px solid #E6EAEF;
+}
+.user-dropdown-icon
+{
+    font-size: 1.4rem;
+    color: #202020;
+}
+.user-dropdown-icon:hover{
+    color: #000;
+    transition: color 400ms ease-in-out;
+}
+.dropdown-item
+{
+    display: flex;
+    align-items: center;
+    padding: 7px 11px;
+    gap: 4px;
+    border-radius: 5px;
+    margin: 1.5px 0;
+    cursor: pointer;
+}
+.dropdown-item:hover
+{
+    background-color: #754FFE;
+    color: #fff;
+    transition:background-color 400ms ease-in-out ;
+}
+.dropdown-item-icon
+{
+    font-size: 1.3rem;
+}
+.nav-responsive-item
+{
+    padding: 4px 7px;
+    font-size: 16px;
+    cursor: pointer;
+    border-radius: 4px;
+}
+.nav-responsive-item:hover
+{
+    background-color: #754FFE;
+    color: #fff;
+}

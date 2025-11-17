@@ -1,0 +1,128 @@
+@media (max-width:430px)
+{
+    .categories-section {
+    padding: 1rem 0.7rem;
+  }
+  .categories-section-title {
+    font-size: 21px;
+  }
+  .categories-list {
+    gap: 4px 0%;
+  }
+  .categories-item {
+    padding: 7px;
+    width: 100%;
+  }
+  .categories-item-img {
+    width: 2.5rem;
+  }
+  .categories-item-name {
+    font-size: 15px;
+  }
+  .categories-item-count {
+    font-size: 15px;
+  }
+}
+
+@media (min-width:430px) and (max-width:750px)
+{
+    .categories-section {
+    padding: 1rem 0.7rem;
+  }
+  .categories-section-title {
+    font-size: 23px;
+  }
+  .categories-list {
+    gap: 4px 1%;
+  }
+  .categories-item {
+    padding: 7px;
+    width: 49%;
+  }
+  .categories-item-img {
+    width: 2.5rem;
+  }
+  .categories-item-name {
+    font-size: 16px;
+  }
+  .categories-item-count {
+    font-size: 15px;
+  }
+}
+
+@media (min-width:750px) and (max-width:900px)
+{
+    .categories-section {
+    padding: 1rem 1rem;
+  }
+  .categories-section-title {
+    font-size: 24px;
+  }
+  .categories-list {
+    gap: 4px 1%;
+  }
+  .categories-item {
+    padding: 7px;
+    width: 32%;
+  }
+  .categories-item-img {
+    width: 3rem;
+  }
+  .categories-item-name {
+    font-size: 17px;
+  }
+  .categories-item-count {
+    font-size: 15px;
+  }
+}
+
+@media (min-width:900px) and (max-width:1000px)
+{
+    .categories-section {
+    padding: 1rem 1rem;
+  }
+  .categories-section-title {
+    font-size: 24px;
+  }
+  .categories-list {
+    gap: 4px 1%;
+  }
+  .categories-item {
+    padding: 7px;
+    width: 24%;
+  }
+  .categories-item-img {
+    width: 3.5rem;
+  }
+  .categories-item-name {
+    font-size: 17px;
+  }
+  .categories-item-count {
+    font-size: 15px;
+  }
+}
+
+@media (min-width: 1000px) {
+  .categories-section {
+    padding: 1rem 1rem;
+  }
+  .categories-section-title {
+    font-size: 25px;
+  }
+  .categories-list {
+    gap: 4px 1%;
+  }
+  .categories-item {
+    padding: 7px;
+    width: 19%;
+  }
+  .categories-item-img {
+    width: 3.5rem;
+  }
+  .categories-item-name {
+    font-size: 17px;
+  }
+  .categories-item-count {
+    font-size: 15px;
+  }
+}
