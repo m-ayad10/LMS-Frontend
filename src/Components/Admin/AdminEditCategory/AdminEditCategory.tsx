@@ -11,7 +11,7 @@ import { updateCategory } from '../../../Redux/Slices/Category/CategoryThunk';
 const EditCategory = () => {
   const navigate = useNavigate();
   const { id } = useParams();
-  const [category, setCategory] = useState<Category>();
+  // const [category, setCategory] = useState<Category>();
   const dispatch = useDispatch<AppDispatch>();
   const [formData, setFormData] = useState({
     name: '',
@@ -38,7 +38,7 @@ const EditCategory = () => {
         }
         
         const category: Category = data.data;
-        setCategory(category);
+        // setCategory(category);
         setFormData({
           name: category.name,
           thumbnail: category.url || ''

@@ -41,7 +41,8 @@ function CourseWatch({ courseData }: CourseWatchProps) {
 
   useLayoutEffect(() => {
     if (!courseData) return;
-    const index = courseData?.courseId.curiculum.findIndex((value, index) => {
+    const index = courseData?.courseId.curiculum.findIndex((_, index) => {
+    
       return !courseData.completedLesson.includes(index);
     });
     console.log(index, courseData.completedLesson);

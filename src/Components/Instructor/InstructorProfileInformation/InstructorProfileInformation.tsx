@@ -46,7 +46,7 @@ function InstructorProfileInformation() {
     }
 
     try {
-     const response= await toast.promise(
+     await toast.promise(
         useFetch(`${server_url}/instructor`, {
           method: "PATCH",
           body: formData,

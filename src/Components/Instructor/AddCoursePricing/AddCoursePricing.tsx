@@ -1,5 +1,5 @@
 // AddCoursePricing.tsx
-import React, { useCallback, useContext } from "react";
+import  { useCallback, useContext } from "react";
 import { FaArrowLeftLong, FaArrowRightLong } from "react-icons/fa6";
 import { activeTabContext } from "../InstructorAddCourse/InstructorAddCourse";
 import { CourseContext } from "../AddCourseForm/CourseProvider";

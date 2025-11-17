@@ -38,12 +38,12 @@ const EnrolledSlice=createSlice({
             state.enrolled=action.payload.data;
         })
 
-        .addCase(enrollFromCart.pending,(state)=>{
+        // .addCase(enrollFromCart.pending,(state)=>{
             
-        })
-         .addCase(enrollFromCart.rejected,(state,action)=>{
+        // })
+        //  .addCase(enrollFromCart.rejected,(state,action)=>{
             
-        })
+        // })
          .addCase(enrollFromCart.fulfilled,(state,action)=>{
             state.status='succeeded';
             toast.success(action.payload.message||"Course Enrolled");

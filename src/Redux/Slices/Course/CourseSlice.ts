@@ -34,11 +34,12 @@ const CourseSlice=createSlice({
             state.courses=action.payload.data||[];
         })
 
-        //post courses
-        .addCase(postCourses.pending,(state)=>{
+        // //post courses
+        // .addCase(postCourses.pending,(state)=>{
             
-        })
-        .addCase(postCourses.rejected,(state,action)=>{
+        // })
+        .addCase(postCourses.rejected,(_,action)=>{
+    
             toast.error(action.payload||"Failed to post Course")
         })
         .addCase(postCourses.fulfilled,(state,action)=>{
@@ -47,10 +48,10 @@ const CourseSlice=createSlice({
         })
 
         //toogle archive post 
-        .addCase(toggleCourseArchieve.pending,(state)=>{
+        // .addCase(toggleCourseArchieve.pending,(state)=>{
             
-        })
-        .addCase(toggleCourseArchieve.rejected,(state,action)=>{
+        // })
+        .addCase(toggleCourseArchieve.rejected,(_,action)=>{
             toast.error(action.payload||"Something went wrong");
         })
         .addCase(toggleCourseArchieve.fulfilled,(state,action)=>{
@@ -59,12 +60,12 @@ const CourseSlice=createSlice({
         })
 
         // delete course
-        .addCase(deleteCourse.pending,(state)=>{
+        // .addCase(deleteCourse.pending,(state)=>{
 
-        })
-        .addCase(deleteCourse.rejected,(state,action)=>{
+        // })
+        // .addCase(deleteCourse.rejected,(state,action)=>{
             
-        })
+        // })
         .addCase(deleteCourse.fulfilled,(state,action)=>{
             state.status='succeeded';
             state.courses=action.payload.data

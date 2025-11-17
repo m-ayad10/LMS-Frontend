@@ -51,11 +51,11 @@ export const CourseContext = createContext<{
 });
 
 export const AppProviders: React.FC<React.PropsWithChildren<{}>> = ({ children }) => {
-  const [activeTab, setActiveTab] = useState<ActiveTab>("basic");
+  // const [activeTab, setActiveTab] = useState<ActiveTab>("basic");
   const [course, setCourse] = useState<Course>(defaultCourse);
 
   // memoize context values to prevent unnecessary re-renders
-  const activeTabValue = useMemo(() => ({ activeTab, setActiveTab }), [activeTab]);
+  // const activeTabValue = useMemo(() => ({ activeTab, setActiveTab }), [activeTab]);
   const courseValue = useMemo(() => ({ course, setCourse }), [course]);
 
   return (

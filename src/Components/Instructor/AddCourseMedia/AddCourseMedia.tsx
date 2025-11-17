@@ -10,7 +10,7 @@ import { CourseContext } from "../AddCourseForm/CourseProvider";
 
 function AddCourseMedia() {
   const { setActiveTab } = useContext(activeTabContext);
-  const { course, setCourse } = useContext(CourseContext);
+  const {  setCourse } = useContext(CourseContext);
   const [imagePreview, setImagePreview] = useState<string | null>(null);
   const [videoPreview, setVideoPreview] = useState<string | null>(null);
 

@@ -1,7 +1,6 @@
 import { FaBook } from "react-icons/fa6";
 import "./style.css";
 import "./responsive.css";
-import { Link } from "react-router-dom";
 import { useSelector } from "react-redux";
 import type { RootState } from "../../../Redux/store";
 import React, { useEffect, useState, useTransition } from "react";

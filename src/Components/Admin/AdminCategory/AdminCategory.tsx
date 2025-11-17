@@ -1,7 +1,7 @@
 import { FaPen } from "react-icons/fa6";
 import { RiBookShelfLine, RiDeleteBin6Line } from "react-icons/ri";
 import { Link, useNavigate } from "react-router-dom";
-import logo from "../../../assets/html logo.webp";
+// import logo from "../../../assets/html logo.webp";
 import "./style.css";
 import { useDispatch, useSelector } from "react-redux";
 import type { AppDispatch, RootState } from "../../../Redux/store";

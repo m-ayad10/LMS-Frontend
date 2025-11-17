@@ -1,7 +1,6 @@
 import { createSlice } from "@reduxjs/toolkit";
 import type { CategorySliceState } from "./CategoryType";
 import { addCategory, deleteCategory, fetchCategory, updateCategory } from "./CategoryThunk";
-import toast from "react-hot-toast";
 
 
 const initialState:CategorySliceState={
@@ -32,23 +31,23 @@ const CategorySlice = createSlice({
     })
 
     //add category
-    .addCase(addCategory.pending,(state)=>{
+    // .addCase(addCategory.pending,(state)=>{
 
-    })
-    .addCase(addCategory.rejected,(state,action)=>{
-    })
+    // })
+    // .addCase(addCategory.rejected,(state,action)=>{
+    // })
     .addCase(addCategory.fulfilled,(state,action)=>{
         state.status='succeeded';
         state.category.push(action.payload.data);
     })
 
     //update category
-    .addCase(updateCategory.pending,(state)=>{
+    // .addCase(updateCategory.pending,(state)=>{
 
-    })
-    .addCase(updateCategory.rejected,(state,action)=>{
+    // })
+    // .addCase(updateCategory.rejected,(state,action)=>{
         
-    })
+    // })
     .addCase(updateCategory.fulfilled,(state,action)=>{
         state.status='succeeded';
         const index=state.category.findIndex((value)=>value._id==action.payload.data._id);
@@ -59,13 +58,13 @@ const CategorySlice = createSlice({
     })
 
     //delete category
-    .addCase(deleteCategory.pending,(state)=>{
+    // .addCase(deleteCategory.pending,(state)=>{
 
 
-    })
-    .addCase(deleteCategory.rejected,(state,action)=>{
+    // })
+    // .addCase(deleteCategory.rejected,(state,action)=>{
         
-    })
+    // })
     .addCase(deleteCategory.fulfilled, (state, action) => {
   state.status = 'succeeded';
   state.category = state.category.filter(

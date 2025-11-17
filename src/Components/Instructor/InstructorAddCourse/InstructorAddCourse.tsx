@@ -1,7 +1,7 @@
 import { FaBook } from "react-icons/fa6";
 import "./style.css";
 import "./responsive.css";
-import { createContext, useContext, useState } from "react";
+import { createContext, useState } from "react";
 import AddCourseForm from "../AddCourseForm/AddCourseForm";
 import {  AppProviders } from "../AddCourseForm/CourseProvider";
 

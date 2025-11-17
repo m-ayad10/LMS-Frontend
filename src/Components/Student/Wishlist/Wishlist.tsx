@@ -45,6 +45,7 @@ function CourseList() {
     e: React.MouseEvent<HTMLButtonElement>,
     courseId: string
   ) => {
+    e.stopPropagation();
     dispatch(addToCart(courseId));
   };
   return (
@@ -139,7 +140,7 @@ function CourseList() {
                 <button
                   className="wishlist-addToCart"
                   onClick={(e) => {
-                    e.stopPropagation();
+                    
                     handleAddToCart(e, item.courseId._id);
                   }}
                 >

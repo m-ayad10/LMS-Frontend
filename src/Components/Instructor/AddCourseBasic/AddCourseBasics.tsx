@@ -1,11 +1,11 @@
 // AddCourseBasic.tsx
-import React, { useCallback, useContext } from "react";
+import  { useCallback, useContext } from "react";
 import { FaArrowRightLong } from "react-icons/fa6";
 import "./style.css";
 import "./responsive.css";
 import { useSelector } from "react-redux";
 import type { RootState } from "../../../Redux/store";
-import { ActiveTabContext, CourseContext } from "../AddCourseForm/CourseProvider";
+import {  CourseContext } from "../AddCourseForm/CourseProvider";
 import { activeTabContext } from "../InstructorAddCourse/InstructorAddCourse";
 
 export default function AddCourseBasic() {
