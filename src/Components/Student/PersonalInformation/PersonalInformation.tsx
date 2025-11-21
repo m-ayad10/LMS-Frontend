@@ -1,5 +1,5 @@
 import {  useEffect, useState } from "react";
-import { FaUserAlt } from "react-icons/fa";
+import { FaEdit, FaSave, FaUserAlt } from "react-icons/fa";
 import "./style.css";
 import "./responsive.css";
 import image from "../../../assets/banner-man-3.png";
@@ -8,6 +8,7 @@ import type { AppDispatch, RootState } from "../../../Redux/store";
 import toast from "react-hot-toast";
 import { server_url, useFetch } from "../../../Hooks/customHook";
 import { addAuth } from "../../../Redux/Slices/Auth/AuthSlice";
+import { FaCamera, FaUserSlash } from "react-icons/fa6";
 
 function PersonalInformation() {
   const user = useSelector((state: RootState) => state.user);
@@ -79,94 +80,113 @@ function PersonalInformation() {
  
   return (
     <>
-      <div className="profile-section">
-        <h1 className="profile-title">Personal Information</h1>
-        <hr className="profile-divider" />
-        {user.status === "succeeded" ? (
-          <>
-            <div className="profile-avatar-section">
-              <img
-                src={profileUrl ? profileUrl : image}
-                alt="User Avatar"
-                className="profile-avatar"
-              />
+     <div className="user-profile-container">
+  <div className="profile-card">
+    <div className="profile-header">
+      <h1 className="profile-main-title">Personal Information</h1>
+      <p className="profile-subtitle">Manage your personal details and profile</p>
+    </div>
+
+    <div className="profile-divider-line"></div>
+
+    {user.status === "succeeded" ? (
+      <div className="profile-content">
+        {/* Avatar Section */}
+        <div className="avatar-section">
+          <div className="avatar-wrapper">
+            <img
+              src={profileUrl ? profileUrl : image}
+              alt="User Avatar"
+              className="user-avatar-image"
+            />
+            <div className="avatar-overlay">
               <input
                 name="profile"
                 type="file"
-                className="profile-avatar-upload"
+                className="avatar-upload-input"
                 disabled={!isEditing}
-                placeholder="Change profile"
                 onChange={handleProfileChange}
               />
+              <div className="avatar-change-text">
+                <FaCamera className="camera-icon" />
+                <span>Change Photo</span>
+              </div>
+            </div>
+          </div>
+        </div>
+
+        {/* Form Section */}
+        <div className="profile-form-container">
+          <form className="modern-profile-form">
+            <div className="form-grid-layout">
+              <div className="input-field-group">
+                <label className="input-label">First Name</label>
+                <div className="input-with-icon">
+                  <FaUserAlt className="input-field-icon" />
+                  <input
+                    type="text"
+                    value={firstName || user.user.firstName}
+                    onChange={(e) => setFirstName(e.target.value)}
+                    disabled={!isEditing}
+                    className="modern-input-field"
+                    placeholder="Enter your first name"
+                  />
+                </div>
+              </div>
+
+              <div className="input-field-group">
+                <label className="input-label">Last Name</label>
+                <div className="input-with-icon">
+                  <FaUserAlt className="input-field-icon" />
+                  <input
+                    type="text"
+                    value={lastName || user.user.lastName}
+                    onChange={(e) => setLastName(e.target.value)}
+                    disabled={!isEditing}
+                    className="modern-input-field"
+                    placeholder="Enter your last name"
+                  />
+                </div>
+              </div>
             </div>
 
-            <div className="profile-form-wrapper">
-              <form className="profile-form">
-                <div className="profile-form-row">
-                  <div className="profile-form-group">
-                    <label htmlFor="">First Name</label>
-                    <div className="auth-input-group">
-                      <FaUserAlt className="auth-input-icon" />
-                      <input
-                        type="text"
-                        value={firstName || user.user.firstName}
-                        onChange={(e) => setFirstName(e.target.value)}
-                        disabled={!isEditing}
-                        className="auth-input-field"
-                        placeholder="Enter your first name"
-                      />
-                    </div>
-                  </div>
-
-                  <div className="profile-form-group">
-                    <label htmlFor="">Last Name</label>
-                    <div className="auth-input-group">
-                      <FaUserAlt className="auth-input-icon" />
-                      <input
-                        type="text"
-                        value={lastName || user.user.lastName}
-                        onChange={(e) => setLastName(e.target.value)}
-                        disabled={!isEditing}
-                        className="auth-input-field"
-                        placeholder="Enter your last name"
-                      />
-                    </div>
-                  </div>
-                </div>
-
-                <div className="profile-form-actions">
-                  {isEditing ? (
-                    <button
-                      className="profile-btn-save"
-                      type="button"
-                      onClick={saveEdit}
-                    >
-                      Save
-                    </button>
-                  ) : (
-                    <button
-                      className="profile-btn-edit"
-                      type="button"
-                      onClick={() => setIsEditing(true)}
-                    >
-                      Edit
-                    </button>
-                  )}
-                </div>
-              </form>
+            <div className="form-actions-container">
+              {isEditing ? (
+                <button
+                  className="save-changes-button"
+                  type="button"
+                  onClick={saveEdit}
+                >
+                  <FaSave className="button-icon" />
+                  Save Changes
+                </button>
+              ) : (
+                <button
+                  className="edit-profile-button"
+                  type="button"
+                  onClick={() => setIsEditing(true)}
+                >
+                  <FaEdit className="button-icon" />
+                  Edit Profile
+                </button>
+              )}
             </div>
-          </>
-        ) : user.status === "loading" ? (
-          <div className="flex flex-col items-center justify-center h-64 text-gray-500">
-            <div className="w-8 h-8 border-4 border-gray-400 border-t-transparent rounded-full animate-spin mb-3"></div>
-            <p className="text-lg font-medium">Loading profile...</p>
-          </div>
-        ) : (
-          <div className="flex flex-col items-center justify-center h-64 text-gray-500">
-            <p className="text-lg font-medium">No profile data found.</p>
-          </div>
-        )}
+          </form>
+        </div>
       </div>
+    ) : user.status === "loading" ? (
+      <div className="loading-state">
+        <div className="loading-spinner"></div>
+        <p className="loading-text">Loading profile...</p>
+      </div>
+    ) : (
+      <div className="empty-state">
+        <FaUserSlash className="empty-icon" />
+        <p className="empty-text">No profile data found</p>
+      </div>
+    )}
+  </div>
+</div>
     </>
   );
 }

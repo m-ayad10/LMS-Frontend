@@ -19,7 +19,7 @@ function Banner (){
                 <h1 className='hero-title'>Welcome to <span className='bg-primary'>Academy</span>  <br />
                    <span className='bg-primary'>Start</span> learning from best platform</h1>
                 <p className='hero-description'>Study any topic, anytime. explore thousands of courses for the lowest price ever!</p>
-                <div className='hero-stats'>
+                <div className='hero-stats '>
                     <div className='stat-item'>
                         <h2 className='stat-value'>8+</h2>
                         <p className='stat-label'>Happy students</p>
