@@ -11,8 +11,8 @@ function InstructorRoutes(){
     return(
         <>
         <Routes>
+            <Route path='/instructor/signup' element={<InstructorSignup/>} />
             <Route element={<InstructorProtectedRoute/>}>
-               <Route path='/instructor/signup' element={<InstructorSignup/>} />
                <Route path='/instructor/profile' element={<InstructorProfilePage/>} />
                <Route path='/instructor/account' element={<InstructorAccountPage/>} />
                <Route path='/instructor' element={<InstructorDashboard/>} />
