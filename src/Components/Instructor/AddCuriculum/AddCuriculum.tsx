@@ -116,7 +116,10 @@ function AddCuriculum() {
           navigate('/instructor/managecourse')
           return response?.message || "Course uploaded successfully 🎉";
         },
-        error: (err) => err || "Failed to upload course",
+        error: (err) =>{ 
+          setLoading(false)
+          return err || "Failed to upload course"
+        },
       },
       {
         style: {

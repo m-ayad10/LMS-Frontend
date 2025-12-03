@@ -13,13 +13,14 @@ function InstructorSignUpForm() {
   const [lastName, setLastName] = useState<string>("");
   const [password, setPassword] = useState<string>("");
   const [profile, setProfile] = useState<File>();
+  const [loading,setLoading]=useState(false)
   const [bio, setBio] = useState<string>("");
   const [error, setError] = useState<any>({});
   const navigate = useNavigate();
 
   const handleSignup = async (e: React.FormEvent) => {
     e.preventDefault();
-
+    setLoading(true)
     const newErrors: { [key: string]: string } = {};
     if (!firstName.trim()) newErrors.firstName = "First name is required";
     if (!lastName.trim()) newErrors.lastName = "Last name is required";
@@ -31,6 +32,7 @@ function InstructorSignUpForm() {
     if (!bio.trim()) newErrors.bio = "Bio is required";
 
     if (Object.keys(newErrors).length > 0) {
+      setLoading(false)
       setError(newErrors);
       return;
     }
@@ -53,6 +55,7 @@ function InstructorSignUpForm() {
     {
       loading: "Creating...",
       success: (result: any) => {
+        setLoading(false)
         if (!result.success) throw new Error(result.message || "Error saving");
         navigate("/otp",{state:{email}});
         return <b>Settings saved!</b>;
@@ -61,6 +64,7 @@ function InstructorSignUpForm() {
     }
   );
     } catch (error: any) {
+      setLoading(false)
       toast.error(error?.message || error || "Something went wrong");
     }
   };
@@ -187,8 +191,10 @@ function InstructorSignUpForm() {
                   onChange={(e) => setBio(e.target.value)}
                 ></textarea>
               </div>
-
-              <button className="auth-button">Sign up</button>
+              {
+                !loading?<button className="auth-button">Sign up</button>:<button disabled className="auth-button">Submiting...</button>
+              }
+              
               <p className="auth-switch">
                 Alldready have an account? <span className="auth-link"><Link to={'/login'}>Login </Link></span>
               </p>

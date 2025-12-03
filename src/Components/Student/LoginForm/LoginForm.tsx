@@ -11,8 +11,8 @@ import { Link, useNavigate } from "react-router-dom";
 import toast from "react-hot-toast";
 
 function LoginForm() {
-  const [email, setEmail] = useState<string>("");
-  const [password, setPassword] = useState<string>("");
+  const [email, setEmail] = useState<string>("test@gmail.com");
+  const [password, setPassword] = useState<string>("12345678");
   const dispatch = useDispatch<AppDispatch>();
   const [error, setError] = useState<{ email?: string; password?: string }>({});
   const navigate = useNavigate();
