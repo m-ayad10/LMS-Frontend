@@ -12,6 +12,7 @@ function App() {
       <div>
         <Toaster />
       </div>
+      
       <Provider store={store}>
         <BrowserRouter>
           <AppRoutes />
