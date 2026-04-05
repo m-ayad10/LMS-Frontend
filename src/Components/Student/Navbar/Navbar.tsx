@@ -56,7 +56,9 @@ function Navbar() {
       <nav className="navbar-cont">
         <div className="navbar">
           <div className="nav-start">
-            <img src={navlogo} className="nav-logo" alt="" />
+            <Link to="/">
+              <img src={navlogo} className="nav-logo" alt="" />
+            </Link>
             <div className="hidden md:flex items-center gap-2 md:gap-1">
               <Link to={"/"}>
                 <p className="nav-text">Home</p>

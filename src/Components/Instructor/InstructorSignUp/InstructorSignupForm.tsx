@@ -1,11 +1,11 @@
 import { FaUserAlt } from "react-icons/fa";
 import { FaLock } from "react-icons/fa6";
-import image from "../../../assets/login-security.gif";
 import { HiPhoto } from "react-icons/hi2";
 import React, { useState } from "react";
 import toast from "react-hot-toast";
 import { server_url, useFetch } from "../../../Hooks/customHook";
 import { Link, useNavigate } from "react-router-dom";
+
 
 function InstructorSignUpForm() {
   const [email, setEmail] = useState<string>("");
@@ -72,62 +72,72 @@ function InstructorSignUpForm() {
   return (
     <>
       <section className="auth-section">
-        <div className="auth-image-cont">
-          <img src={image} className="auth-image" alt="login image" />
+        <div className="auth-left">
+
+          <div className="auth-left-content">
+            <h2 className="auth-left-heading">Share your expertise</h2>
+            <p className="auth-left-sub">
+              Build and publish your courses to thousands of eager students around the world.
+            </p>
+            <ul className="auth-left-features">
+              <li>Build and sell courses with ease</li>
+              <li>Keep 70% of every sale you make</li>
+            </ul>
+          </div>
+          <p className="auth-left-footer">© 2026 Academy. All rights reserved.</p>
         </div>
-        <div className="auth-form-cont">
-          <div className="auth-content">
-            <h3 className="auth-title">
-              Instructor Signup<span className="text-[#754FFE]">!</span>{" "}
-            </h3>
+        <div className="auth-right">
+          <div className="auth-form-box">
+            <h3 className="auth-title">Become an instructor</h3>
             <p className="auth-description">
-              Explore, learn, and grow with us. enjoy a seamless and enriching
-              educational journey. lets begin!
+              Share your knowledge and reach thousands of students
             </p>
             <form className="auth-form" onSubmit={handleSignup}>
-              {error.firstName && (
-                <p className="error-message">{error.firstName}</p>
-              )}
-              <label htmlFor="firstName" className="auth-input-label">
-                First name
-              </label>
-              <br />
-              <div className="auth-input-group">
-                <FaUserAlt className="auth-input-icon" />
-                <input
-                  type="text"
-                  name="firstName"
-                  value={firstName}
-                  onChange={(e) => setFirstName(e.target.value)}
-                  className="auth-input-field"
-                  placeholder="Enter your first name"
-                />
-              </div>
-
-              {error.lastName && (
-                <p className="error-message">{error.lastName}</p>
-              )}
-              <label htmlFor="lastName" className="auth-input-label">
-                LastName
-              </label>
-              <br />
-              <div className="auth-input-group">
-                <FaUserAlt className="auth-input-icon" />
-                <input
-                  type="text"
-                  name="lastName"
-                  value={lastName}
-                  onChange={(e) => setLastName(e.target.value)}
-                  className="auth-input-field"
-                  placeholder="Enter your last name"
-                />
+              <div className="auth-row">
+                <div className="auth-row-item">
+                  {error.firstName && (
+                    <p className="error-message">{error.firstName}</p>
+                  )}
+                  <label htmlFor="firstName" className="auth-input-label">
+                    First name
+                  </label>
+                  <div className="auth-input-group">
+                    <FaUserAlt className="auth-input-icon" />
+                    <input
+                      type="text"
+                      name="firstName"
+                      value={firstName}
+                      onChange={(e) => setFirstName(e.target.value)}
+                      className="auth-input-field"
+                      placeholder="First name"
+                    />
+                  </div>
+                </div>
+                <div className="auth-row-item">
+                  {error.lastName && (
+                    <p className="error-message">{error.lastName}</p>
+                  )}
+                  <label htmlFor="lastName" className="auth-input-label">
+                    Last name
+                  </label>
+                  <div className="auth-input-group">
+                    <FaUserAlt className="auth-input-icon" />
+                    <input
+                      type="text"
+                      name="lastName"
+                      value={lastName}
+                      onChange={(e) => setLastName(e.target.value)}
+                      className="auth-input-field"
+                      placeholder="Last name"
+                    />
+                  </div>
+                </div>
               </div>
 
               {error.email && <p className="error-message">{error.email}</p>}
               <label htmlFor="email" className="auth-input-label">
-                Your email
+                Email
               </label>
-              <br />
               <div className="auth-input-group">
                 <FaUserAlt className="auth-input-icon" />
                 <input
@@ -136,7 +146,7 @@ function InstructorSignUpForm() {
                   value={email}
                   onChange={(e) => setEmail(e.target.value)}
                   className="auth-input-field"
-                  placeholder="Enter your email"
+                  placeholder="you@example.com"
                 />
               </div>
 
@@ -144,18 +154,17 @@ function InstructorSignUpForm() {
                 <p className="error-message">{error.password}</p>
               )}
               <label htmlFor="password" className="auth-input-label">
-                Your password
+                Password
               </label>
-              <br />
               <div className="auth-input-group">
                 <FaLock className="auth-input-icon" />
                 <input
-                  type="text"
+                  type="password"
                   name="password"
                   value={password}
                   onChange={(e) => setPassword(e.target.value)}
                   className="auth-input-field"
-                  placeholder="Enter your password"
+                  placeholder="Create a password"
                 />
               </div>
 
@@ -163,9 +172,8 @@ function InstructorSignUpForm() {
                 <p className="error-message">{error.profile}</p>
               )}
               <label htmlFor="profile" className="auth-input-label">
-                Select profile
+                Profile photo
               </label>
-              <br />
               <div className="auth-input-group">
                 <HiPhoto className="auth-input-icon" />
                 <input
@@ -178,29 +186,31 @@ function InstructorSignUpForm() {
 
               {error.bio && <p className="error-message">{error.bio}</p>}
               <label htmlFor="bio" className="auth-input-label">
-                Enter your bio
+                Tell us about yourself
               </label>
-              <br />
               <div className="auth-input-group">
                 <textarea
                   name="bio"
-                  rows={3}
-                  placeholder="message..."
-                  className="auth-input-textfield"
                   value={bio}
                   onChange={(e) => setBio(e.target.value)}
+                  className="auth-input-textfield"
+                  placeholder="Share your expertise, experience and what you'd like to teach..."
                 ></textarea>
               </div>
-              {
-                !loading?<button className="auth-button">Sign up</button>:<button disabled className="auth-button">Submiting...</button>
-              }
-              
+
+              <button className="auth-button" disabled={loading}>
+                {loading ? "Creating account..." : "Create account"}
+              </button>
               <p className="auth-switch">
-                Alldready have an account? <span className="auth-link"><Link to={'/login'}>Login </Link></span>
+                Already have an account?{" "}
+                <Link to={'/login'}>
+                  <span className="auth-link">Log in</span>
+                </Link>
               </p>
               <p className="auth-switch">
-                <span className="auth-link">
-                    <Link to={'/signup'}>Sign up</Link></span> as a Student
+                <Link to={'/signup'}>
+                  <span className="auth-link">Sign up</span>
+                </Link>{" "}as a student
               </p>
             </form>
           </div>

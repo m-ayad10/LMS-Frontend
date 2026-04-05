@@ -1,5 +1,4 @@
 import { FaUserAlt } from "react-icons/fa";
-import image from "../../../assets/login-security.gif";
 import "./style.css";
 import "./responsive.css";
 import { FaLock } from "react-icons/fa6";
@@ -9,6 +8,7 @@ import { loginUser } from "../../../Redux/Slices/Auth/AuthThunk";
 import type { AppDispatch } from "../../../Redux/store";
 import { Link, useNavigate } from "react-router-dom";
 import toast from "react-hot-toast";
+
 
 function LoginForm() {
   const [email, setEmail] = useState<string>("test@gmail.com");
@@ -48,24 +48,31 @@ function LoginForm() {
   return (
     <>
       <section className="auth-section">
-        <div className="auth-image-cont">
-          <img src={image} className="auth-image" alt="login image" />
-        </div>
-        <div className="auth-form-cont">
-          <div className="auth-content">
-            <h3 className="auth-title">
-              Login<span className="text-[#754FFE]">!</span>{" "}
-            </h3>
-            <p className="auth-description">
-              Explore, learn, and grow with us. enjoy a seamless and enriching
-              educational journey. lets begin!
+        <div className="auth-left">
+
+          <div className="auth-left-content">
+            <h2 className="auth-left-heading">The smarter way to learn</h2>
+            <p className="auth-left-sub">
+              Join thousands of students already building real-world skills with expert-led courses.
             </p>
-            <form action="" className="auth-form" onSubmit={handleLogin}>
+            <ul className="auth-left-features">
+              <li>10+ courses across top categories</li>
+              <li>Learn at your own pace, anytime</li>
+            </ul>
+          </div>
+          <p className="auth-left-footer">© 2026 Academy. All rights reserved.</p>
+        </div>
+        <div className="auth-right">
+          <div className="auth-form-box">
+            <h3 className="auth-title">Welcome back</h3>
+            <p className="auth-description">
+              Log in to continue your learning journey
+            </p>
+            <form className="auth-form" onSubmit={handleLogin}>
               {error.email && <p className="error-message">{error.email}</p>}
               <label htmlFor="email" className="auth-input-label">
-                Your email
+                Email
               </label>
-              <br />
               <div className="auth-input-group">
                 <FaUserAlt className="auth-input-icon" />
                 <input
@@ -73,16 +80,15 @@ function LoginForm() {
                   className="auth-input-field"
                   onChange={(e) => setEmail(e.target.value)}
                   value={email}
-                  placeholder="Enter your email"
+                  placeholder="you@example.com"
                 />
               </div>
               {error.password && (
                 <p className="error-message">{error.password}</p>
               )}
-              <label htmlFor="email" className="auth-input-label">
-                Your password
+              <label htmlFor="password" className="auth-input-label">
+                Password
               </label>
-              <br />
               <div className="auth-input-group">
                 <FaLock className="auth-input-icon" />
                 <input
@@ -93,7 +99,7 @@ function LoginForm() {
                   placeholder="Enter your password"
                 />
               </div>
-              <button className="auth-button">Login</button>
+              <button className="auth-button">Log in</button>
               <p className="auth-switch">
                 Don't have an account?{" "}
                 <Link to={"/signup"}>
