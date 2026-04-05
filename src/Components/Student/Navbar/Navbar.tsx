@@ -144,7 +144,7 @@ function Navbar() {
                     <FiChevronDown className="user-dropdown-icon" />
                   </div>
                   {isDropdownOpen && (
-                    <div className="absolute right-0 top-14 z-10 bg-[#E6EAEF] px-4 py-3 rounded-[4px] ">
+                    <div className="dropdown-menu">
                       <Link to={"/profile"}>
                         <p className="dropdown-item">
                           <FiUser className="dropdown-item-icon" />
@@ -153,28 +153,24 @@ function Navbar() {
                           </span>
                         </p>
                       </Link>
-                      <hr className="w-full m-0 p-0 h-[0.5px]" />
                       <Link to={"/mycourses"}>
                         <p className="dropdown-item">
                           <CgNotes className="dropdown-item-icon" />
                           <span className="flex text-nowrap ">My courses </span>
                         </p>
                       </Link>
-                      <hr className="w-full m-0 p-0 h-[0.5px]" />
                       <Link to={"/cart"}>
                         <p className="dropdown-item">
                           <FiShoppingCart className="dropdown-item-icon" />
                           <span className="flex text-nowrap ">Cart </span>
                         </p>
                       </Link>
-                      <hr className="w-full m-0 p-0 h-[0.5px]" />
                       <Link to={"/wishlist"}>
                         <p className="dropdown-item">
                           <BiHeart className="dropdown-item-icon" />
                           <span className="flex text-nowrap ">Wishlist</span>
                         </p>
                       </Link>
-                      <hr className="w-full m-0 p-0 h-[0.5px]" />
                       <p className="dropdown-item">
                         <BiLogOut className="dropdown-item-icon" />
                         <span
