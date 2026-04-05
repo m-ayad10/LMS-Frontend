@@ -40,25 +40,9 @@
     letter-spacing: -0.01em;
 }
 
-.nav-text::after {
-    content: '';
-    position: absolute;
-    bottom: -2px;
-    left: 0;
-    width: 0;
-    height: 2px;
-    background-color: #754FFE;
-    border-radius: 1px;
-    transition: width 0.25s ease;
-}
-
 .nav-text:hover {
-    color: #1e293b;
+    color: #754FFE;
     cursor: pointer;
-}
-
-.nav-text:hover::after {
-    width: 100%;
 }
 
 /* ── Hamburger ── */

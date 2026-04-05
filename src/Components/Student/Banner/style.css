@@ -1,62 +1,72 @@
-.hero-section
-{
-    padding: 1rem 2rem;
-    display: flex;
-    width: 100%;
+/* ── Hero Section ── */
+.hero-section {
+    background: linear-gradient(135deg, #f5f3ff 0%, #f0f9ff 50%, #fff 100%);
 }
-.hero-content
-{
-    padding: 1rem;
+
+.hero-inner {
     display: flex;
-    justify-content: center;
     align-items: center;
-    width: 60%;
+    gap: 3rem;
+    max-width: 1320px;
+    margin: 0 auto;
+    padding: 4rem 2rem 3rem;
 }
-.hero-title
-{
-    font-size: 34px;
-    line-height: 2.5rem;
-    font-weight: 600;
+
+.hero-text {
+    flex: 1;
+    min-width: 0;
 }
-.hero-description
-{
-    font-size: 15px;
-    color: #777777;
-    text-align: justify;
+
+.hero-title {
+    font-size: 42px;
+    line-height: 1.18;
+    font-weight: 700;
+    color: #1e293b;
+    letter-spacing: -0.02em;
 }
-.hero-stats
-{
-    display: flex;
-    justify-content: space-around;
-}
-.stat-item
-{
-    text-align: center;
-}
-.stat-value
-{
-    font-size: 29px;
-    font-weight: 600;
-}
-.stat-label
-{
-    color: #777777;
-    font-size: 15px;
-}
-.hero-image
-{
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    width: 40%;
-}
-.banner-image
-{
-    height: auto;
-    width: 90%;
-}
-.bg-primary
-{
+
+.hero-title .highlight {
     color: #754FFE;
-    text-shadow: 0.5px 0.5px 2px;
+}
+
+.hero-description {
+    font-size: 16px;
+    color: #64748b;
+    line-height: 1.7;
+    margin-top: 1rem;
+    max-width: 460px;
+}
+
+.hero-cta {
+    margin-top: 1.75rem;
+    background-color: #754FFE;
+    color: #fff;
+    border: none;
+    font-family: 'Inter', sans-serif;
+    font-size: 15px;
+    font-weight: 500;
+    padding: 13px 32px;
+    border-radius: 8px;
+    cursor: pointer;
+    transition: background-color 0.2s ease;
+}
+
+.hero-cta:hover {
+    background-color: #6440e0;
+}
+
+.hero-image {
+    flex: 1;
+    display: flex;
+    justify-content: flex-end;
+}
+
+.hero-image img {
+    max-width: 460px;
+    width: 100%;
+    height: auto;
+}
+
+.bg-primary {
+    color: #754FFE;
 }

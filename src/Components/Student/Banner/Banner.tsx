@@ -1,9 +1,11 @@
-import img from '../../../assets/Group 6.png'
 import './style.css'
 import './responsive.css'
- import Aos from 'aos'
+import Aos from 'aos'
 import 'aos/dist/aos.css'; 
 import { useEffect } from "react"
+import { Link } from 'react-router-dom'
+import heroImg from '../../../assets/Group 6.png'
+
 function Banner (){
     useEffect(()=>{
         Aos.init({
@@ -14,29 +16,15 @@ function Banner (){
     return(
         <>
         <section className="hero-section">
-            <div className="hero-content" data-aos="zoom-in" data-aos-easing="ease-in-out">
-                <div className=''>
-                <h1 className='hero-title'>Welcome to <span className='bg-primary'>Academy</span>  <br />
-                   <span className='bg-primary'>Start</span> learning from best platform</h1>
-                <p className='hero-description'>Study any topic, anytime. explore thousands of courses for the lowest price ever!</p>
-                <div className='hero-stats '>
-                    <div className='stat-item'>
-                        <h2 className='stat-value'>8+</h2>
-                        <p className='stat-label'>Happy students</p>
-                    </div>
-                    <div className='stat-item'>
-                        <h2  className='stat-value'>6+</h2>
-                        <p className='stat-label'>Quality educators</p>
-                    </div>
-                    <div className='stat-item'>
-                        <h2  className='stat-value'>8+</h2>
-                        <p className='stat-label'>Quality courses</p>
-                    </div>
+            <div className="hero-inner">
+                <div className="hero-text" data-aos="fade-right" data-aos-easing="ease-out">
+                    <h1 className='hero-title'>Build skills that actually <span className='highlight'>matter</span></h1>
+                    <p className='hero-description'>Get access to thousands of courses taught by real-world experts in development, design, business and more.</p>
+                    <Link to='/courses'><button className='hero-cta'>Explore Courses</button></Link>
                 </div>
+                <div className="hero-image" data-aos="fade-left" data-aos-easing="ease-out" data-aos-delay="150">
+                    <img src={heroImg} alt="Students learning" />
                 </div>
-            </div>
-            <div className="hero-image">
-                <img src={img} alt="banner" data-aos="zoom-in" data-aos-easing="ease-in-out" className='banner-image' />
             </div>
         </section>
         </>

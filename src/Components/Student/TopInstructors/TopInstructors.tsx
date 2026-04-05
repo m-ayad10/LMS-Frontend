@@ -1,12 +1,31 @@
-import img1 from '../../../assets/Group 9.png'
-import img2 from '../../../assets/Group 9 (1).png'
-import img3 from '../../../assets/Group 9 (2).png'
-import img4 from '../../../assets/Group 9 (3).png'
 import './style.css'
 import './responsive.css'
 import Aos from 'aos'
 import 'aos/dist/aos.css'; 
 import { useEffect } from 'react';
+
+const instructors = [
+    {
+        name: "Priya Sharma",
+        role: "Full Stack Developer · MERN Stack Specialist",
+        avatar: "https://images.unsplash.com/photo-1573496359142-b8d87734a5a2?w=300&h=300&fit=crop&crop=face",
+    },
+    {
+        name: "James Carter",
+        role: "Cloud Architect · AWS & DevOps Instructor",
+        avatar: "https://images.unsplash.com/photo-1560250097-0b93528c311a?w=300&h=300&fit=crop&crop=face",
+    },
+    {
+        name: "Aisha Khan",
+        role: "Product Designer · UX Research & Prototyping",
+        avatar: "https://images.unsplash.com/photo-1580489944761-15a19d654956?w=300&h=300&fit=crop&crop=face",
+    },
+    {
+        name: "Marcus Lee",
+        role: "Mobile Developer · React Native & Flutter Coach",
+        avatar: "https://images.unsplash.com/photo-1507003211169-0a1dd7228f2d?w=300&h=300&fit=crop&crop=face",
+    },
+];
 
 function TopInstructors(){
     useEffect(()=>{
@@ -20,26 +39,13 @@ function TopInstructors(){
         <div className="instructor-section">
             <h2 className="instructor-section-title">Top Instructors</h2>
             <div className="instructor-lists">
-                <div className="instructor-item"  data-aos="zoom-in" data-aos-easing="ease-in-out">
-                    <img src={img1} className="instructor-item-img" alt="" />
-                    <h4 className="instructor-name">Albert John</h4>
-                    <p className="instructor-role">Professional Film Colorist · DaVinci Resolve Trainer</p>
-                </div>
-                <div className="instructor-item"  data-aos="zoom-in" data-aos-easing="ease-in-out">
-                    <img src={img2} className="instructor-item-img" alt="" />
-                    <h4 className="instructor-name">Sarah Mitchell</h4>
-                    <p className="instructor-role">Senior Web Developer · JavaScript & React Expert</p>
-                </div>
-                <div className="instructor-item"  data-aos="zoom-in" data-aos-easing="ease-in-out">
-                    <img src={img3} className="instructor-item-img" alt="" />
-                    <h4 className="instructor-name">David Peterson</h4>
-                    <p className="instructor-role">Data Scientist · AI & Machine Learning Mentor</p>
-                </div>
-                <div className="instructor-item"  data-aos="zoom-in" data-aos-easing="ease-in-out">
-                    <img src={img4} className="instructor-item-img" alt="" />
-                    <h4 className="instructor-name">Emma Williams</h4>
-                    <p className="instructor-role">UI/UX Designer · Figma & Design Systems Coach</p>
-                </div>
+                {instructors.map((inst) => (
+                    <div className="instructor-item" key={inst.name} data-aos="zoom-in" data-aos-easing="ease-in-out">
+                        <img src={inst.avatar} className="instructor-item-img" alt={inst.name} />
+                        <h4 className="instructor-name">{inst.name}</h4>
+                        <p className="instructor-role">{inst.role}</p>
+                    </div>
+                ))}
             </div>
         </div>
         </>

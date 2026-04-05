@@ -1,34 +1,52 @@
-.online-learning-section
-{
-    padding: 1rem 3rem;
+/* ── Why Online Section ── */
+.online-learning-section {
+    padding: 3rem 2rem;
+    max-width: 1320px;
+    margin: 0 auto;
 }
-.section-title
-{
+
+.section-title {
     text-align: center;
     font-size: 26px;
-    font-weight: 500;
+    font-weight: 600;
+    color: #1e293b;
+    letter-spacing: -0.01em;
 }
-.benefits-list
-{
+
+.benefits-list {
     display: flex;
     flex-wrap: wrap;
-    gap: 1%;
-    margin-top: 0.6rem;
+    gap: 1.5rem;
+    margin-top: 1.5rem;
+    justify-content: center;
 }
-.benefit-item
-{
-    width: 24%;
-    justify-items: center;
-    padding: 1rem;
+
+.benefit-item {
+    width: calc(25% - 1.125rem);
     text-align: center;
+    padding: 1.5rem 1rem;
+    border-radius: 12px;
+    background-color: #f8fafc;
+    border: 1px solid #f1f5f9;
+    transition: box-shadow 0.2s ease, transform 0.2s ease;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
 }
-.benefit-img
-{
-    height: 10rem;
+
+.benefit-item:hover {
+    box-shadow: 0 4px 16px rgba(0, 0, 0, 0.06);
+    transform: translateY(-2px);
+}
+
+.benefit-img {
+    height: 7rem;
     width: auto;
 }
-.benefit-text
-{
-    font-size: 15px;
-    color: #777777;
+
+.benefit-text {
+    font-size: 14px;
+    color: #64748b;
+    line-height: 1.6;
+    margin-top: 0.75rem;
 }
