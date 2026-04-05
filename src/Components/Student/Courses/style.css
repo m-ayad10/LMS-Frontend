@@ -1,6 +1,8 @@
 .course-section
 {
-    padding: 1rem 2rem;
+    max-width: 1320px;
+    margin: 0 auto;
+    padding: 1.5rem 2rem;
 }
 .course-section-heading
 {
@@ -170,25 +172,12 @@
     overflow: hidden;
 }
 
-.course-card::before {
-    content: '';
-    position: absolute;
-    top: 0;
-    left: -100%;
-    width: 100%;
-    height: 100%;
-    background: linear-gradient(90deg, transparent, rgba(117, 79, 254, 0.05), transparent);
-    transition: left 0.6s ease;
-}
 
-.course-card:hover::before {
-    left: 100%;
-}
 
 .course-card:hover {
-    transform: translateY(-6px);
-    box-shadow: 0 12px 28px rgba(117, 79, 254, 0.15);
-    border-color: #754FFE;
+    transform: translateY(-4px);
+    box-shadow: 0 8px 24px rgba(0, 0, 0, 0.08);
+    border-color: #cbd5e1;
 }
 
 .course-item-thumbnail-cont {
@@ -213,9 +202,8 @@
 }
 
 .course-wishlist-buttn:hover {
-    transform: scale(1.15) rotate(5deg);
-    background: rgba(255, 255, 255, 1);
-    box-shadow: 0 4px 16px rgba(0, 0, 0, 0.25);
+    transform: scale(1.1);
+    background: #fff;
 }
 
 .wishlist-unselected-icon {
@@ -257,13 +245,13 @@
 
 
 .course-title {
+    color: #1e293b;
+    font-family: 'Inter', sans-serif;
+    transition: color 0.2s ease;
+}
+
+.course-card:hover .course-title {
     color: #754FFE;
-    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
-    transition: all 0.3s ease;
-    background: linear-gradient(135deg, #754FFE 0%, #4512fb 100%);
-    -webkit-background-clip: text;
-    -webkit-text-fill-color: transparent;
-    background-clip: text;
 }
 
 
@@ -275,15 +263,8 @@
 
 
 .course-lessons, .course-students {
-    color: #754FFE;
-    transition: all 0.3s ease;
-    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
-}
-
-.course-card:hover .course-lessons,
-.course-card:hover .course-students {
-    color: #4512fb;
-    /* transform: translateX(2px); */
+    color: #64748b;
+    font-family: 'Inter', sans-serif;
 }
 
 .icon-lessons, .icons-students {
@@ -293,9 +274,9 @@
 
 
 .course-card-hr {
-    background: linear-gradient(90deg, transparent, #754FFE, transparent);
-    transition: all 0.4s ease;
+    background-color: #e2e8f0;
     height: 1px;
+    border: none;
 }
 
 
@@ -316,13 +297,8 @@
 }
 
 .course-intructor-name {
-    color: #754FFE;
-    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
-    transition: all 0.3s ease;
-    background: linear-gradient(135deg, #754FFE 0%, #4512fb 100%);
-    -webkit-background-clip: text;
-    -webkit-text-fill-color: transparent;
-    background-clip: text;
+    color: #64748b;
+    font-family: 'Inter', sans-serif;
 }
 
 /* Star rating animation */

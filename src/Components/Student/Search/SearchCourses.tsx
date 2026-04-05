@@ -82,6 +82,15 @@ navigate(location.pathname, { replace: true, state: {} });    }
         );
       }
 
+      if (sort === "price") {
+        filtered.sort((a, b) => a.price - b.price);
+      } else {
+        filtered.sort(
+          (a, b) =>
+            new Date(b.createdAt).getTime() - new Date(a.createdAt).getTime()
+        );
+      }
+
       setFilterCourses(filtered);
     });
   }, [courses.courses, search, level, selectedCategories, sort]);
@@ -111,20 +120,6 @@ navigate(location.pathname, { replace: true, state: {} });    }
 
   const handleSort = (type: "price" | "date") => {
     setSort(type);
-
-    const sortedCourses = [...filteredCourses]; // clone array before sorting
-    startTransition(() => {
-      if (type === "price") {
-        sortedCourses.sort((a, b) => a.price - b.price);
-      } else {
-        sortedCourses.sort(
-          (a, b) =>
-            new Date(b.createdAt).getTime() - new Date(a.createdAt).getTime()
-        );
-      }
-    });
-
-    setFilterCourses(sortedCourses);
   };
 
   return (
@@ -176,7 +171,8 @@ navigate(location.pathname, { replace: true, state: {} });    }
       <SearchModal open={open}  handleApplyFilter={handleApplyFilter}  setOpen={setOpen} />
       {isPending ? (
         <>
-          <div className="course-lists mt-2">
+          <div className="course-section">
+          <div className="course-lists">
             <>
               {[...Array(4)].map((_, index) => (
                 <div key={index} className="course-card">
@@ -202,12 +198,14 @@ navigate(location.pathname, { replace: true, state: {} });    }
               ))}
             </>
           
-        </div>
+          </div>
+          </div>
         </>
       ) : (
         <>
           {courses.status === "loading" ? (
-           <div className="course-lists mt-2">
+           <div className="course-section">
+           <div className="course-lists">
             <>
               {[...Array(4)].map((_, index) => (
                 <div key={index} className="course-card">
@@ -233,7 +231,8 @@ navigate(location.pathname, { replace: true, state: {} });    }
               ))}
             </>
           
-        </div>
+          </div>
+          </div>
           ) : courses.courses.length === 0 ||filteredCourses.length === 0? (
             <div className="text-center text-gray-500 py-10">
               No courses found.
