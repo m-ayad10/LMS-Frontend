@@ -70,9 +70,6 @@ function StudentAccountInformation() {
    <div className="password-change-container">
   <div className="password-change-card">
     <div className="password-header">
-      <div className="password-icon-wrapper">
-        <FaLock className="password-main-icon" />
-      </div>
       <h1 className="password-main-title">Change Password</h1>
       <p className="password-subtitle">Update your account password for enhanced security</p>
     </div>

@@ -1,61 +1,26 @@
-.wishlist-heading
-{
-    font-size: 25px;
+.wishlist-heading {
+    font-size: 1.4rem;
+    font-weight: 600;
+    color: #1f2937;
+    padding-bottom: 0.5rem;
+    border-bottom: 2px solid #754FFE;
+    display: inline-block;
+    margin-bottom: 1rem;
+}
+
+.wishlist-addToCart {
+    padding: 5px 12px;
+    font-size: 13px;
     font-weight: 500;
-}
-
-.wishlist-addToCart
-{
-    padding: 3px 7px;
-    font-size: 15px;
-    background-color:#754FFE ;
+    background-color: #754FFE;
     color: #fff;
-    border-radius: 4px;
+    border-radius: 6px;
+    border: none;
+    cursor: pointer;
+    transition: background-color 0.15s ease;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
 }
 
-@media  (max-width:400px) {
-  .wishlist-heading {
-    font-size: 25px;
-  }
-}
-@media (min-width: 400px) and (max-width:450px) {
-  .wishlist-heading {
-    font-size: 25px;
-  }
-}
-@media (min-width: 450px) and (max-width:550px) {
-  .wishlist-heading {
-    font-size: 25px;
-  }
-}
-
-@media (min-width: 550px) and (max-width:600px) {
-
-  .wishlist-heading {
-    font-size: 25px;
-  }
-}
-
-@media (min-width: 600px) and (max-width:800px) {
-  .wishlist-heading {
-    font-size: 25px;
-  }
-}
-
-@media (min-width: 800px) and (max-width:950px) {
-  .wishlist-heading {
-    font-size: 26px;
-  }
-}
-
-@media (min-width: 950px) and (max-width:1150px) {
-  .wishlist-heading {
-    font-size: 26px;
-  }
-}
-
-@media (min-width: 1150px) {
-  .wishlist-heading {
-    font-size: 26px;
-  }
+.wishlist-addToCart:hover {
+    background-color: #6340e0;
 }

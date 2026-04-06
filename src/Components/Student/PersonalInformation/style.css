@@ -5,23 +5,18 @@
   align-items: flex-start;
   min-height: 80vh;
   padding: 2rem 1rem;
-  background: linear-gradient(135deg, #f8fafc 0%, #f1f5f9 100%);
+  background: #f9fafb;
   font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
 }
 
 .profile-card {
   background: white;
-  border-radius: 16px;
-  box-shadow: 0 10px 40px rgba(0, 0, 0, 0.08);
+  border-radius: 12px;
+  border: 1px solid #e5e7eb;
+  box-shadow: 0 1px 4px rgba(0, 0, 0, 0.06);
   padding: 2.5rem;
   width: 100%;
   max-width: 600px;
-  transition: all 0.3s ease;
-}
-
-.profile-card:hover {
-  box-shadow: 0 20px 60px rgba(0, 0, 0, 0.12);
-  transform: translateY(-2px);
 }
 
 /* Profile Header */
@@ -31,14 +26,10 @@
 }
 
 .profile-main-title {
-  font-size: 2rem;
+  font-size: 1.75rem;
   font-weight: 700;
-  background: linear-gradient(135deg, #1f2937 0%, #754FFE 100%);
-  -webkit-background-clip: text;
-  -webkit-text-fill-color: transparent;
-  background-clip: text;
-  margin-bottom: 0.5rem;
-  transition: all 0.3s ease;
+  color: #1f2937;
+  margin-bottom: 0.4rem;
 }
 
 .profile-subtitle {
@@ -48,9 +39,9 @@
 }
 
 .profile-divider-line {
-  height: 2px;
-  background: linear-gradient(90deg, transparent, #754FFE, transparent);
-  margin: 1.5rem 0;
+  height: 1px;
+  background: #e5e7eb;
+  margin: 1.25rem 0;
   border: none;
 }
 
@@ -67,14 +58,8 @@
   height: 120px;
   border-radius: 50%;
   overflow: hidden;
-  border: 4px solid #f8fafc;
-  box-shadow: 0 8px 25px rgba(117, 79, 254, 0.15);
-  transition: all 0.4s ease;
-}
-
-.avatar-wrapper:hover {
-  transform: scale(1.05);
-  box-shadow: 0 12px 35px rgba(117, 79, 254, 0.25);
+  border: 3px solid #e5e7eb;
+  box-shadow: 0 2px 8px rgba(0, 0, 0, 0.08);
 }
 
 .user-avatar-image {
@@ -148,11 +133,10 @@
 }
 
 .input-label {
-  font-size: 0.9rem;
+  font-size: 0.875rem;
   font-weight: 600;
   color: #374151;
   margin-bottom: 0.5rem;
-  transition: all 0.3s ease;
 }
 
 .input-with-icon {
@@ -166,18 +150,18 @@
   left: 1rem;
   color: #9ca3af;
   font-size: 1rem;
-  transition: all 0.3s ease;
   z-index: 2;
 }
 
 .modern-input-field {
   width: 100%;
-  padding: 0.875rem 1rem 0.875rem 2.5rem;
-  border: 2px solid #f3f4f6;
-  border-radius: 10px;
-  font-size: 1rem;
-  background: #fafafa;
-  transition: all 0.3s ease;
+  padding: 0.75rem 1rem 0.75rem 2.5rem;
+  border: 1px solid #e5e7eb;
+  border-radius: 8px;
+  font-size: 0.95rem;
+  background: #fff;
+  color: #111827;
+  transition: border-color 0.15s ease, box-shadow 0.15s ease;
   font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
 }
 
@@ -185,8 +169,7 @@
   outline: none;
   border-color: #754FFE;
   background: white;
-  box-shadow: 0 0 0 3px rgba(117, 79, 254, 0.1);
-  transform: translateY(-1px);
+  box-shadow: 0 0 0 3px rgba(117, 79, 254, 0.08);
 }
 
 .modern-input-field:disabled {
@@ -212,48 +195,36 @@
   display: flex;
   align-items: center;
   gap: 0.5rem;
-  padding: 0.875rem 2rem;
+  padding: 0.75rem 1.75rem;
   border: none;
-  border-radius: 10px;
-  font-size: 1rem;
+  border-radius: 8px;
+  font-size: 0.95rem;
   font-weight: 600;
   cursor: pointer;
-  transition: all 0.3s cubic-bezier(0.4, 0, 0.2, 1);
-  position: relative;
-  overflow: hidden;
+  transition: background-color 0.15s ease, opacity 0.15s ease;
+  font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
 }
 
 .edit-profile-button {
-  background: linear-gradient(135deg, #754FFE 0%, #8b6dff 100%);
+  background: #754FFE;
   color: white;
-  box-shadow: 0 4px 15px rgba(117, 79, 254, 0.3);
 }
 
 .save-changes-button {
-  background: linear-gradient(135deg, #10b981 0%, #34d399 100%);
+  background: #10b981;
   color: white;
-  box-shadow: 0 4px 15px rgba(16, 185, 129, 0.3);
 }
 
-.edit-profile-button:hover,
+.edit-profile-button:hover {
+  background: #6340e0;
+}
+
 .save-changes-button:hover {
-  transform: translateY(-2px);
-  box-shadow: 0 8px 25px rgba(117, 79, 254, 0.4);
-}
-
-.edit-profile-button:active,
-.save-changes-button:active {
-  transform: translateY(0);
+  background: #0da271;
 }
 
 .button-icon {
-  font-size: 1rem;
-  transition: transform 0.3s ease;
-}
-
-.edit-profile-button:hover .button-icon,
-.save-changes-button:hover .button-icon {
-  transform: scale(1.1);
+  font-size: 0.95rem;
 }
 
 /* Loading State */
